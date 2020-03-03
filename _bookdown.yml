@@ -1,0 +1,19 @@
+book_filename: "elegantbookdown-demo"
+rmd_files: [
+  "index.Rmd",
+  "00-Some-Explanations.Rmd",
+  "01-integer-exponents.Rmd",
+]
+
+output_dir: book_output
+# clean: [packages.bib, bookdown.bbl]
+# new_session: yes
+
+delete_merged_file: true
+
+language:
+  ui:
+    chapter_name: "Chapter "
+  label:
+    exr: 'Problem '
+

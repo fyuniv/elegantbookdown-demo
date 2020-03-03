@@ -1,0 +1,328 @@
+\usepackage{framed,color}
+
+\definecolor{shadecolor}{RGB}{248,248,248} %%% for shaded environments
+
+\usepackage{subfig}
+
+\usepackage{geometry}
+
+\geometry{
+letterpaper,
+margin=1in
+}
+
+%%%%%%%%%%%%%%%%%%% Packages for Math %%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{mathtools}
+% \usepackage{breqn}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{greenbean}{RGB}{144,237,204}
+\def\gray{\color{gray}}
+\def\black{\color{black}}
+\def\blue{\color{blue}}
+\def\red{\color{red}}
+\def\green{\color{green}}
+\def\yellow{\color{yellow}}
+\def\cyan{\color{cyan}}
+\def\brown{\color{brown}}
+\def\purple{\color{purple}}
+\def\olive{\color{olive}}
+\def\lime{\color{lime}}
+\def\darkgray{\color{darkgray}}
+
+%%%%%%%%%%%%%%%% Include Graphs %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\textfloatsep=0pt
+\dblfloatsep=0pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%% Spacing for Baseline and Parskip  %%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.1}
+\parindent=0pt
+% \parskip=0.2\baselineskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% Packages for Fine Tune Content %%%%%%%%%%%
+\usepackage[english]{babel}
+% \usepackage{indentfirst}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%% Enumerate Style %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[inline]{enumitem}
+\setenumerate{
+    label=\textup{(\arabic*)},
+    afterlabel={\,\,\,},
+    %%vertical
+    topsep=0pt,
+    partopsep=2pt,
+% 	itemsep=5pt,
+% 	parsep=2pt,
+% 	labelindent=0em,
+    itemindent = *,
+    wide,
+    itemjoin={\hfill},
+    after={\hfill\null}
+	%%Horizontal
+}
+% \setitemize{
+% 	%%vertical
+% 	topsep=0pt,
+% 	partopsep=0pt,
+% 	itemsep=0pt,
+% 	parsep=0pt,
+% 	%%Horizontal
+% 	labelindent=0em,
+% 	% leftmargin =!,
+% 	itemindent = 0pt,
+% 	labelsep= 2pt,
+% 	% labelwidth=1em,
+% }
+% \setlist{topsep=0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%% include files/Figure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[verbose]{wrapfig}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%% Cancel common factors in Math %%%%%%%%%%%%%%%%%%%%
+\usepackage[makeroom]{cancel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+%%%%%%%%%%%%%% Math mode without vertical spacing %%%%%%%%%%%%%%%%%
+\makeatletter
+\g@addto@macro\normalsize{%
+	\setlength\abovedisplayskip{1pt plus 2pt minus 2pt}%
+	\setlength\belowdisplayskip{1pt plus 2pt minus 2pt}%
+	\setlength\abovedisplayshortskip{1pt plus 2pt minus 2pt}%
+	\setlength\belowdisplayshortskip{1pt plus 2pt minus 2pt}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% Customized Commands %%%%%%%%%%
+\newcommand{\ZZ}{\mathbf{Z}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\abs}[1]{\lvert #1\rvert}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\parll}{ {\mathbin{\parallel}} }
+\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}
+
+\makeatletter
+\newcommand*\rel@kern[1]{\kern#1\dimexpr\macc@kerna}
+\newcommand*\widebar[1]{%
+\begingroup
+\def\mathaccent##1##2{%
+\rel@kern{0.8}%
+\overline{\rel@kern{-0.8}\macc@nucleus\rel@kern{0.2}}%
+\rel@kern{-0.2}%
+}%
+\macc@depth\@ne
+\let\math@bgroup\@empty \let\math@egroup\macc@set@skewchar
+\mathsurround\z@ \frozen@everymath{\mathgroup\macc@group\relax}%
+\macc@set@skewchar\relax
+\let\mathaccentV\macc@nested@a
+\macc@nested@a\relax111{#1}%
+\endgroup
+}
+\renewcommand{\bar}{\widebar}
+
+
+\usepackage{fontawesome,manfnt,bbding}
+\usepackage{textcomp}
+
+\newcommand{\size}[2]{{\fontsize{#1}{0}\selectfont#2}}
+
+\definecolor{main}{RGB}{59,180,5}%
+\definecolor{second}{RGB}{175,153,8}%
+\definecolor{third}{RGB}{244,105,102}%
+
+\renewenvironment{example}[1][]{
+  \refstepcounter{exam}
+  \par\noindent\textbf{\color{main}{\examplename} \theexam #1}
+  \rmfamily
+}{
+  \par\ignorespacesafterend
+}
+
+\renewenvironment{exercise}[1][]{
+    \refstepcounter{exer}
+    \par\noindent
+    \makebox[-3pt][r]{\color{red!90}\size{12}{\HandPencilLeft}}
+	\textbf{\color{main}{\exercisename} \theexer #1}
+    \rmfamily
+}{\par\ignorespacesafterend}
+
+\usepackage{tcolorbox}
+
+\tcbset{
+	noparskip/.style={before={\pagebreak[0]\parskip=0pt\parindent=0pt}},
+	before skip=-\baselineskip,
+    box align=top,
+    enhanced,
+    breakable,
+    left=0pt,
+    right=0pt,
+    top=2pt,
+    bottom=2pt,
+    opacityframe=0,
+    opacitybacktitle=0.5,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+}
+
+\newenvironment{rmdnote}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \makebox[-3pt][r]{\color{red!90}\size{8}{\textdbend}\,\,}
+    \begin{tcolorbox}[
+    title={\textbf{\color{second}Note}},
+    title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
+    colback=red!10!white,
+    ]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+
+\newenvironment{rmdtip}{
+	\vspace*{0.5\baselineskip}
+	\par\noindent
+	\makebox[-3pt][r]{\color{red!90}\size{12}{\HandRight}\,\,}
+    \begin{tcolorbox}[
+    enhanced,
+    title={\textbf{\color{second}Tips}},
+    title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
+    colback=cyan!10!white,
+    ]
+    \sffamily
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+
+\newenvironment{rmdthink}{
+	\vspace*{0.5\baselineskip}
+	\par\noindent
+	\makebox[-4pt][r]{\color{green!90}\size{12}{\faLightbulbO}\,\,}
+    \begin{tcolorbox}[
+    enhanced,
+    title={\textbf{\color{second}Think}},
+    title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
+    colback=green!20!white,
+    ]
+    \sffamily
+}{
+    \end{tcolorbox}
+	\par\ignorespacesafterend
+}
+
+
+\newenvironment{rmdsol}{
+    \par\noindent
+    \textbf{\color{main}Solution} \itshape
+}{\par}
+\newenvironment{rmdrmk}{
+    \noindent\textbf{\color{second}Remark}
+}{\par}
+
+\usepackage{multicol}
+
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+\fi
+
+\usepackage{microtype}
+
+\usepackage{xurl} % add URL line breaks if available
+
+\urlstyle{same} % disable monospaced font for URLs
+
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.33,0.33,0.33}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.61,0.61,0.61}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.14,0.14,0.14}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.43,0.43,0.43}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+
+\usepackage{caption}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+% \usepackage{makeidx}
+% \makeindex
+
+\urlstyle{tt}
+
+% \makeatletter
+% \def\thm@space@setup{%
+%   \thm@preskip=8pt plus 2pt minus 4pt
+%   \thm@postskip=\thm@preskip
+% }
+% \makeatother
+
+%%%% Fix elagantbook chapter title issue.
+\titleformat{\chapter}[\style]{\bfseries}
+{\filcenter\LARGE\enspace\bfseries{\color{structurecolor}\IfAppendix{\appendixname}{\chaptername\,\,\thechapter}\enspace}}{1pt}{\bfseries\color{structurecolor}\LARGE\filcenter}[\ifdefstring{\ELEGANT@base}{hide}{}{\filcenter\base{structurecolor}{88}}]
+
+\frontmatter
+
+\renewcommand{\baselinestretch}{0.975}

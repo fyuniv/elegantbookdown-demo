@@ -1,0 +1,55 @@
+--- 
+title: "A Demo of Elegantbook Bookdown"
+author: "Fei Ye"
+date: "`r Sys.Date()`"
+output: pdf_document
+description: This project demonstrates how to make the [Elegantbookdown](https://github.com/XiangyunHuang/ElegantBookdown) template created by [Xiangyun Huang](https://github.com/XiangyunHuang) work for theorem environments.
+documentclass: elegantbook
+github-repo: fyemath/elegantbookdown-demo
+logo: ''
+cover: figs/Spring.jpg
+site: bookdown::bookdown_site
+classoption: en,11pt
+version: '0.90'
+---
+
+
+```{r remove_amsmath, include=FALSE}
+
+options(bookdown.post.latex = function(x) {
+  # x is the content of the LaTeX output file  
+  # The following codes is another way to removes amsthm environments
+  
+  start_row <- grep("package\\{amsthm", x)
+  end_row <- grep("newtheorem\\*\\{solution", x)
+  x<-x[-c(start_row:end_row)]
+  
+  # Remove \iffalse \fi\\
+  x<-gsub('^\\\\iffalse.\\\\fi\\{\\}+?(\\\\)', '', x)
+  x<-gsub('^\\\\tightlist', '', x)
+
+  x<-gsub('(\\\\BeginKnitrBlock\\{)+(.*)+(\\})', '\\1\\2\\3\\{\\}\\{\\}', x)
+})
+```
+
+```{r fig_setting, include=FALSE}
+library("knitr")
+knitr::opts_chunk$set(out.width="60%", fig.align="center")
+```
+
+\mainmatter
+
+\hypersetup{pageanchor=true}
+
+\renewcommand{\baselinestretch}{1.05}\normalsize
+
+\captionsetup[figure]{labelformat=empty}
+\captionsetup[subfigure]{labelformat=empty}
+
+# Introduction {-}
+
+ElegantLaTeX Program developers are intended to provide you beautiful, elegant, user-friendly templates. Currently, the ElegantLaTeX is composed of ElegantNote, ElegantBook, ElegantPaper, designed for typesetting notes, books, and working papers respectively. Latest releases are strongly recommended! This guide is aimed at briefly introducing the 101 of this template. For any other question, suggestion or comment, feel free to contact us on GitHub issue or email us.
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+![by-nc-sa license icon](figs/by-nc-sa.png)

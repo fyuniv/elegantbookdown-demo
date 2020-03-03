@@ -1,0 +1,39 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{pgfmath}
+\usepackage{tikz-cd}
+\usepackage{pgffor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{
+	calc,
+	angles,
+	quotes,
+	arrows.meta,
+	decorations.markings,
+	math,
+	backgrounds,
+	pgfplots.statistics,
+	matrix,
+	patterns,
+	shapes.geometric,
+	spy,
+	intersections,
+}
+\begin{document}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[%grid=both,
+unit vector ratio*=1 1,
+ymin=-0.5,ymax=3,xmax=4,xmin=-4, xtick=\empty,ytick=\empty, extra y ticks={1},
+axis lines = middle,xlabel=$x$,ylabel=$y$,
+x label style={anchor=west}, y label style={anchor=south}
+]
+\addplot[thick, samples=100, domain=-3.75:3.75]   {2^x};
+\node[anchor=west] at (axis cs:1,2)   {\parbox{2cm}{$f(x)=b^x$\\ $b>1$}};
+\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (0,1) {};
+\end{axis}
+\end{tikzpicture}
+\end{document}

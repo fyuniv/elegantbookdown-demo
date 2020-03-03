@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Examples | A Demo of Elegantbook Bookdown</title>
+  <meta name="description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Examples | A Demo of Elegantbook Bookdown" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
+  <meta name="github-repo" content="fyemath/elegantbookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Examples | A Demo of Elegantbook Bookdown" />
+  
+  <meta name="twitter:description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
+  
+
+<meta name="author" content="Fei Ye" />
+
+
+<meta name="date" content="2020-03-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="some-explanations.html"/>
+
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script>
+/* ========================================================================
+ * Bootstrap: collapse.js v3.3.7
+ * http://getbootstrap.com/javascript/#collapse
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+/* jshint latedef: false */
+
++function ($) {
+  'use strict';
+
+  // COLLAPSE PUBLIC CLASS DEFINITION
+  // ================================
+
+  var Collapse = function (element, options) {
+    this.$element      = $(element)
+    this.options       = $.extend({}, Collapse.DEFAULTS, options)
+    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
+                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
+    this.transitioning = null
+
+    if (this.options.parent) {
+      this.$parent = this.getParent()
+    } else {
+      this.addAriaAndCollapsedClass(this.$element, this.$trigger)
+    }
+
+    if (this.options.toggle) this.toggle()
+  }
+
+  Collapse.VERSION  = '3.3.7'
+
+  Collapse.TRANSITION_DURATION = 350
+
+  Collapse.DEFAULTS = {
+    toggle: true
+  }
+
+  Collapse.prototype.dimension = function () {
+    var hasWidth = this.$element.hasClass('width')
+    return hasWidth ? 'width' : 'height'
+  }
+
+  Collapse.prototype.show = function () {
+    if (this.transitioning || this.$element.hasClass('in')) return
+
+    var activesData
+    var actives = this.$parent && this.$parent.children('.panel').children('.in, .collapsing')
+
+    if (actives && actives.length) {
+      activesData = actives.data('bs.collapse')
+      if (activesData && activesData.transitioning) return
+    }
+
+    var startEvent = $.Event('show.bs.collapse')
+    this.$element.trigger(startEvent)
+    if (startEvent.isDefaultPrevented()) return
+
+    if (actives && actives.length) {
+      Plugin.call(actives, 'hide')
+      activesData || actives.data('bs.collapse', null)
+    }
+
+    var dimension = this.dimension()
+
+    this.$element
+      .removeClass('collapse')
+      .addClass('collapsing')[dimension](0)
+      .attr('aria-expanded', true)
+
+    this.$trigger
+      .removeClass('collapsed')
+      .attr('aria-expanded', true)
+
+    this.transitioning = 1
+
+    var complete = function () {
+      this.$element
+        .removeClass('collapsing')
+        .addClass('collapse in')[dimension]('')
+      this.transitioning = 0
+      this.$element
+        .trigger('shown.bs.collapse')
+    }
+
+    if (!$.support.transition) return complete.call(this)
+
+    var scrollSize = $.camelCase(['scroll', dimension].join('-'))
+
+    this.$element
+      .one('bsTransitionEnd', $.proxy(complete, this))
+      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)[dimension](this.$element[0][scrollSize])
+  }
+
+  Collapse.prototype.hide = function () {
+    if (this.transitioning || !this.$element.hasClass('in')) return
+
+    var startEvent = $.Event('hide.bs.collapse')
+    this.$element.trigger(startEvent)
+    if (startEvent.isDefaultPrevented()) return
+
+    var dimension = this.dimension()
+
+    this.$element[dimension](this.$element[dimension]())[0].offsetHeight
+
+    this.$element
+      .addClass('collapsing')
+      .removeClass('collapse in')
+      .attr('aria-expanded', false)
+
+    this.$trigger
+      .addClass('collapsed')
+      .attr('aria-expanded', false)
+
+    this.transitioning = 1
+
+    var complete = function () {
+      this.transitioning = 0
+      this.$element
+        .removeClass('collapsing')
+        .addClass('collapse')
+        .trigger('hidden.bs.collapse')
+    }
+
+    if (!$.support.transition) return complete.call(this)
+
+    this.$element
+      [dimension](0)
+      .one('bsTransitionEnd', $.proxy(complete, this))
+      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)
+  }
+
+  Collapse.prototype.toggle = function () {
+    this[this.$element.hasClass('in') ? 'hide' : 'show']()
+  }
+
+  Collapse.prototype.getParent = function () {
+    return $(this.options.parent)
+      .find('[data-toggle="collapse"][data-parent="' + this.options.parent + '"]')
+      .each($.proxy(function (i, element) {
+        var $element = $(element)
+        this.addAriaAndCollapsedClass(getTargetFromTrigger($element), $element)
+      }, this))
+      .end()
+  }
+
+  Collapse.prototype.addAriaAndCollapsedClass = function ($element, $trigger) {
+    var isOpen = $element.hasClass('in')
+
+    $element.attr('aria-expanded', isOpen)
+    $trigger
+      .toggleClass('collapsed', !isOpen)
+      .attr('aria-expanded', isOpen)
+  }
+
+  function getTargetFromTrigger($trigger) {
+    var href
+    var target = $trigger.attr('data-target')
+      || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
+
+    return $(target)
+  }
+
+
+  // COLLAPSE PLUGIN DEFINITION
+  // ==========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.collapse')
+      var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
+
+      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
+      if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.collapse
+
+  $.fn.collapse             = Plugin
+  $.fn.collapse.Constructor = Collapse
+
+
+  // COLLAPSE NO CONFLICT
+  // ====================
+
+  $.fn.collapse.noConflict = function () {
+    $.fn.collapse = old
+    return this
+  }
+
+
+  // COLLAPSE DATA-API
+  // =================
+
+  $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function (e) {
+    var $this   = $(this)
+
+    if (!$this.attr('data-target')) e.preventDefault()
+
+    var $target = getTargetFromTrigger($this)
+    var data    = $target.data('bs.collapse')
+    var option  = data ? 'toggle' : $this.data()
+
+    Plugin.call($target, option)
+  })
+
+}(jQuery);
+
+</script>
+
+<script>
+// Folding solutions.
+// Code modified from the answer for the question on stackoverflow
+// https://stackoverflow.com/questions/45360998/code-folding-in-bookdown
+
+window.initializeSolutionFolding = function(show) {
+
+// handlers for show-all and hide all
+$("#rmd-show-all-solution").click(function() {
+  $('div.solution-collapse').each(function() {
+    $(this).collapse('show');
+  });
+});
+$("#rmd-hide-all-solution").click(function() {
+  $('div.solution-collapse').each(function() {
+    $(this).collapse('hide');
+  });
+});
+
+// index for unique solution element ids
+var currentIndex = 1;
+
+// select all solution blocks
+var rSolutionBlocks = $('div.solution');
+rSolutionBlocks.each(function() {
+
+  // create a collapsable div to wrap the solution in
+  var div = $('<div class="collapse solution-collapse"></div>');
+  if (show)
+    div.addClass('in');
+  var id = 'solution-643E0F36' + currentIndex++;
+  div.attr('id', id);
+  $(this).before(div);
+  $(this).detach().appendTo(div);
+
+  // add a show solution button right above
+  var showSolutionText = $('<span>' + (show ? 'Hide' : 'Solution') + '</span>');
+  var showSolutionButton = $('<button type="button" class="btn btn-default btn-xs solution-folding-btn pull-right"></button>');
+  showSolutionButton.append(showSolutionText);
+  showSolutionButton
+      .attr('data-toggle', 'collapse')
+      .attr('data-target', '#' + id)
+      .attr('aria-expanded', show)
+      .attr('aria-controls', id);
+
+  var buttonRow = $('<div class="solution-button-row"></div>');
+  var buttonCol = $('<div class="col-md-12"></div>');
+
+  buttonCol.append(showSolutionButton);
+  buttonRow.append(buttonCol);
+
+  div.before(buttonRow);
+
+  // update state of button on show/hide
+  // div.on('hidden.bs.collapse', function () {
+  //   showSolutionText.text('Show');
+  // });
+  // div.on('show.bs.collapse', function () {
+  //   showSolutionText.text('Hide');
+  // });
+});
+
+}
+
+</script>
+
+<script>
+$(document).ready(function () {
+  window.initializeSolutionFolding("show" === "hide");
+});
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="css\style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A demo for Elegantbook Bookdown</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="some-explanations.html"><a href="some-explanations.html"><i class="fa fa-check"></i><b>1</b> Some Explanations</a></li>
+<li class="chapter" data-level="2" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>2</b> Examples</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Demo of Elegantbook Bookdown</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div class="latex-macros" style="display: none">
+$$\require{color}$$
+$$\require{amsmath}$$
+$$\require{cancel}$$
+$$\definecolor{purple}{RGB}{226, 15, 233}$$
+$$\definecolor{grey}{RGB}{177, 159, 149}$$
+$$\newcommand{\ii}{\mathbf{i}}$$
+$$\newcommand{\parll}{ {\mathbin{\parallel}} }$$
+$$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
+</div>
+<div id="examples" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Examples</h1>
+<div id="dont-be-tricked" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Don’t Be Tricked</h2>
+<div class="rmdthink">
+<ol style="list-style-type: decimal">
+<li><p>A pizza shop sales 12-inches pizza and 8-inches pizza at the price $12/each and $6/each respectively. With $12, would you like to order one 12-inches and two 8-inches. Why?</p></li>
+<li><p>A sheet of everyday copy paper is about 0.01 millimeter thick. Repeat folding along a different side 20 times. Now, how thick do you think the folded paper is?</p></li>
+</ol>
+</div>
+</div>
+<div id="properties-of-exponents" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Properties of Exponents</h2>
+<p>For an integer <span class="math inline">\(n\)</span>, and an expression <span class="math inline">\(x\)</span>, the mathematical operation of the <span class="math inline">\(n\)</span>-times repeated multiplication of <span class="math inline">\(x\)</span> is call exponentiation, written as <span class="math inline">\(x^n\)</span>, that is,
+<span class="math display">\[
+x^n=\underbrace{x\cdot x \cdots x}_{n~\text{factors of}~x}.
+\]</span></p>
+<p>In the notation <span class="math inline">\(x^n\)</span>, <span class="math inline">\(n\)</span> is called <strong><em>the exponent</em></strong>, <span class="math inline">\(x\)</span> is called <strong><em>the base</em></strong>, and <span class="math inline">\(x^n\)</span> is called <strong><em>the power</em></strong>, read as “<span class="math inline">\(x\)</span> raised to the <span class="math inline">\(n\)</span>-th power”, “<span class="math inline">\(x\)</span> to the <span class="math inline">\(n\)</span>-th power”, “<span class="math inline">\(x\)</span> to the <span class="math inline">\(n\)</span>-th”, “<span class="math inline">\(x\)</span> to the power of <span class="math inline">\(n\)</span>” or “<span class="math inline">\(x\)</span> to the <span class="math inline">\(n\)</span>”.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The product rule <span class="math display">\[x^m\cdot x^n=x^{m+n}.\]</span></td>
+<td><span class="math display">\[2x^2\cdot (-3x^3)=-6x^5.\]</span></td>
+</tr>
+<tr class="even">
+<td>The quotient rule (for <span class="math inline">\(x\neq 0\)</span>.) <span class="math display">\[\dfrac{x^m}{x^n}= \begin{cases} x^{m-n}  &amp; \text{if} m\ge n.\\[1em] \dfrac{1}{x^{n-m}} &amp; \text{if} m\le n. \end{cases} \]</span></td>
+<td><span class="math display">\[\frac{15x^5}{5x^2}=3x^3;\]</span> <span class="math display">\[\frac{-3x^2}{6x^3}=-\frac{1}{2x}.\]</span></td>
+</tr>
+<tr class="odd">
+<td>The zero exponent rule (for <span class="math inline">\(x\neq 0\)</span>.) <span class="math display">\[x^0=1.\]</span></td>
+<td><span class="math display">\[(-2)^0=1;\]</span> <span class="math display">\[-x^0=-1.\]</span></td>
+</tr>
+<tr class="even">
+<td>The negative exponent rule (for <span class="math inline">\(x\neq 0\)</span>.) <span class="math display">\[x^{-n}=\dfrac{1}{x^n} \quad\text{and}\quad \dfrac{1}{x^{-n}}=x^n.\]</span></td>
+<td><span class="math display">\[(-2)^{-3}=\frac{1}{(-2)^3}=-\frac18;\]</span> <span class="math display">\[\frac{x^{-2}}{x^{-3}}=\frac{x^3}{x^2}=x.\]</span></td>
+</tr>
+<tr class="odd">
+<td>The power to a power rule <span class="math display">\[\left(x^a\right)^b=x^{ab}.\]</span></td>
+<td><span class="math display">\[\left(2^{2}\right)^3=2^6=64;\]</span> <span class="math display">\[\left(x^2\right)^3=x^6.\]</span></td>
+</tr>
+<tr class="even">
+<td>The product raised to a power rule <span class="math display">\[(xy)^n=x^ny^n.\]</span></td>
+<td><span class="math display">\[\left(-2x\right)^{2}=(-2)^2x^2=4x^2.\]</span></td>
+</tr>
+<tr class="odd">
+<td>The quotient raised to a power rule (for <span class="math inline">\(y\neq 0\)</span>.) <span class="math display">\[\left(\dfrac{x}{y}\right)^n=\dfrac{x^n}{y^n}.\]</span></td>
+<td><span class="math display">\[    \left(\dfrac{x}{-2}\right)^{3}=\dfrac{x^3}{(-2)^3}=-\dfrac{x^3}{8}.\]</span></td>
+</tr>
+</tbody>
+</table>
+<div class="rmdnote">
+<p><strong>Order of Basic Mathematical Operations</strong></p>
+<p>In mathematics, the order of operations reflects conventions about which procedure should be performed first. There are four levels (from the highest to the lowest):</p>
+<p><strong>Parenthesis</strong>; <strong>Exponentiation</strong>; <strong>Multiplication and Division</strong>; <strong>Addition and Subtraction</strong>.</p>
+<p>Within the same level, the convention is to perform from the left to the right.</p>
+</div>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-1" class="example"><strong>Example 2.1  </strong></span>
+Simplify. <strong>Write with positive exponents.</strong>
+<span class="math display">\[
+\left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
+\]</span></p>
+</div>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> 
+The idea is to simplify the base first and rewrite using positive exponents only.</p>
+<p><span class="math display">\[
+\begin{aligned}
+    \left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}
+=&amp;\left(\dfrac{x^3}{2z^{5}y^8}\right)^{-4}\\
+=&amp;\left(\dfrac{2z^{5}y^8}{x^3}\right)^4\\
+=&amp;\dfrac{2^4(z^{5})^4(y^8)^4}{(x^3)^4}\\
+=&amp;\dfrac{16y^{32}z^{20}}{x^{12}}.\\
+\end{aligned}
+\]</span></p>
+</div>
+<div class="rmdtip">
+<p><strong>Simplify (at least partially) the problem first</strong><br />
+To avoid mistakes when working with negative exponents, it’s better to apply the negative exponent rule to change negative exponents to positive exponents and simplify the base first.</p>
+</div>
+<div style="page-break-after: always;"></div>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-3" class="theorem"><strong>Theorem 2.1  </strong></span>
+If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
+<span class="math display">\[a^2+b^2=c^2.\]</span></p>
+</div>
+
+<div class="corollary">
+<p><span id="cor:unnamed-chunk-4" class="corollary"><strong>Corollary 2.1  </strong></span>
+For any angle <span class="math inline">\(\theta\)</span>, we have
+<span class="math display">\[
+\sin^2\theta+\cos^2\theta=1
+\]</span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="practice" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Practice</h2>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-5" class="exercise"><strong>Problem 2.1  </strong></span>
+Simplify. <strong>Write with positive exponents.</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\((3a^2b^3c^2)(4abc^2)(2b^2c^3)\)</span></li>
+<li><span class="math inline">\(\dfrac{4y^3z^0}{x^2y^2}\)</span></li>
+<li><span class="math inline">\((-2)^{-3}\)</span></li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-6" class="exercise"><strong>Problem 2.2  </strong></span>
+Simplify. <strong>Write with positive exponents.</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\dfrac{-u^0v^{15}}{v^{16}}\)</span></li>
+<li><span class="math inline">\((-2a^3b^2c^0)^3\)</span></li>
+<li><span class="math inline">\(\dfrac{m^5 n^{2}}{(mn)^3}\)</span></li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-7" class="exercise"><strong>Problem 2.3  </strong></span>
+Simplify. <strong>Write with positive exponents.</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\((-3a^2x^3)^{-2}\)</span></li>
+<li><span class="math inline">\(\left(\dfrac{-x^0y^3}{2wz^2}\right)^3\)</span></li>
+<li><span class="math inline">\(\dfrac{3^{-2}a^{-3}b^5}{x^{-3}y^{-4}}\)</span></li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-8" class="exercise"><strong>Problem 2.4  </strong></span>
+Simplify. <strong>Write with positive exponents.</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\left(-x^{-1}(-y)^2\right)^3\)</span></li>
+<li><span class="math inline">\(\left(\dfrac{6x^{-2}y^5}{2y^{-3}z^{-11}}\right)^{-3}\)</span></li>
+<li><span class="math inline">\(\dfrac{(3 x^{2} y^{-1})^{-3}(2 x^{-3} y^{2})^{-1}}{(x^{6} y^{-5})^{-2}}\)</span></li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-9" class="exercise"><strong>Problem 2.5  </strong></span>
+A store has large size and small size watermelons. A large one cost $4 and a small one $1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given $4, will you buy a large watermelon or 4 smaller ones? Why?</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="some-explanations.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["elegantbookdown-demo.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

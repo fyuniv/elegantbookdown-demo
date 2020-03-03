@@ -1,0 +1,165 @@
+.rmdnote, .rmdtip, .rmdthink{
+    padding: 1em 1em 1em 4em;
+    margin-bottom: 10px;
+}
+
+.rmdnote {
+    background: #f5ead8 5px center/3em no-repeat;
+    background-image: url("../figs/note.png");
+}
+.rmdtip {
+    background: #88c1f0 5px center/3em no-repeat;
+    background-image: url("../figs/tip.png");
+}
+.rmdthink {
+    background: #96f5f8 5px center/3em no-repeat;
+    background-image: url("../figs/thinking.png");
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+body {
+  background-color: #ccd8f5;
+}
+
+span.exercise, span.example {
+  margin-right: 0.5em;
+}
+
+div.exercise ol, div.example ol, div.enuminline ol {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+div.exercise ol li {
+  /* min-width: 27%; */
+  margin-right: 5%;
+  list-style-type: lower-alpha;
+  margin-left: -0.6em;
+  padding-left: 0.6em;
+  flex-grow: 1;
+}
+
+div.example ol li, div.enuminline ol li {
+    /* min-width: 27%; */
+    margin-right: 5%;
+    margin-left: -0.6em;
+    padding-left: 0.6em;
+    flex-grow: 1;
+  }
+
+div.exercise ol li:last-of-type, div.example ol li:last-of-type, div.enuminline ol li:last-of-type {
+    margin-right: 0em;
+}
+
+div.exercise li::marker {
+  font-size: 1.2em;
+}
+
+span.exercise::before{
+  content: "\270f";
+  font-size: 1.2em;
+  color: lime;
+  padding-right: 0.3em; 
+}
+
+button.solution-folding-btn {
+    background-color: rgb(127, 54, 223);
+    border: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.solution-button-row { 
+    display: flex;
+    margin-bottom: 1em;
+}
+
+div.solution>p:first-of-type {
+  display: none;
+}
+
+.collapse { 
+    display: none; 
+}
+
+.in { 
+    display:block 
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.caption {
+    text-align: center;
+}
+
+div.riddle ol li {
+    list-style-type: decimal;
+}
+
+/* div.riddle ol li::marker {
+    font-weight: bold;
+} */
+
+.twocols {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    display: flex;
+}
+
+.threecols {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    display: flex;
+}
+
+.pullleft{
+    display: block;
+    float: left;
+    width: 45%;
+}
+
+.pullright {
+    display: block;
+    float: right;
+    width: 45%;
+}
+
+.listimg ol {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.listimg ol li {
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    flex-grow: 1;
+}

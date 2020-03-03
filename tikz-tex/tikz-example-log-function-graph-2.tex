@@ -1,0 +1,48 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{pgfmath}
+\usepackage{tikz-cd}
+\usepackage{pgffor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{
+	calc,
+	angles,
+	quotes,
+	arrows.meta,
+	decorations.markings,
+	math,
+	backgrounds,
+	pgfplots.statistics,
+	matrix,
+	patterns,
+	shapes.geometric,
+	spy,
+	intersections,
+}
+\begin{document}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[
+	axis lines = middle,
+	unit vector ratio*=1 1,
+	xmin=-1,
+	xmax=4,
+	ymax=2.5,
+	ymin=-2.5,
+	xtick=\empty,
+	ytick=\empty, 
+	extra x ticks={1},
+	xlabel=$x$,
+	ylabel=$y$,
+	x label style={anchor=west},
+	y label style={anchor=south},
+]
+\addplot[thick, samples=100, y domain=-2.5:2.5]   {-ln(x)/ln(2)};
+\node[anchor=north] at (axis cs:2.75,2)   {\parbox{2.5cm}{$f(x)=\log_b x$\\ $0< b<1$}};
+\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (1,0) {};
+\end{axis}
+\end{tikzpicture}
+\end{document}

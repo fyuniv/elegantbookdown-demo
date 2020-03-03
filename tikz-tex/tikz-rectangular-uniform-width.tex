@@ -1,0 +1,41 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{pgfmath}
+\usepackage{tikz-cd}
+\usepackage{pgffor}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{
+	calc,
+	angles,
+	quotes,
+	arrows.meta,
+	decorations.markings,
+	math,
+	backgrounds,
+	pgfplots.statistics,
+	matrix,
+	patterns,
+	shapes.geometric,
+	spy,
+	intersections,
+}
+\begin{document}
+\begin{tikzpicture}[scale=0.8,every node/.style={scale=0.6, font=\small, minimum size=0.5pt, inner sep=0pt}]
+\draw[name path=outside]  (0,0)--(5,0)--(5,4)--(0,4)--cycle;
+\draw[name path=inside] (0.5,0.5)--(4.5,0.5)--(4.5,3.5)--(0.5,3.5)--cycle;
+\tikzfillbetween[
+of=outside and inside,
+%    every even segment/.style={pattern=crosshatch}
+]{pattern=crosshatch,pattern color=gray!50};
+\draw[stealth-stealth] (0.5,2)--(4.5,2) node[pos=0.3, fill=white] {$16$};
+\draw[stealth-stealth] (2.5,0.5)--(2.5,3.5) node[pos=0.7, fill=white] {$10$};
+\draw[stealth-stealth] (0,2)--(0.5,2) node[midway, fill=white] {$x$};
+\draw[stealth-stealth] (4.5,2)--(5,2) node[midway, fill=white] {$x$};
+\draw[stealth-stealth] (2.5,0)--(2.5,0.5) node[midway, fill=white] {$x$};
+\draw[stealth-stealth] (2.5,3.5)--(2.5,4) node[midway, fill=white] {$x$};
+\end{tikzpicture}
+\end{document}
