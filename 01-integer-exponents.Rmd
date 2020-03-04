@@ -75,7 +75,11 @@ To avoid mistakes when working with negative exponents, it's better to apply the
 
 \newpage
 
-```{theorem}
+## Generating Theorem Environments Using R Bookdown Code Chunks
+
+Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
+
+```{theorem, name="Pythagorean Theorem"}
 
 If $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 $$a^2+b^2=c^2.$$
@@ -91,9 +95,76 @@ $$
 
 ```
 
-```{lemma, name="Lemma A"}
+```{lemma}
 
 For any angle $\theta$, projecting the terminal side to the $x$-axis forms a right triangle.
+
+```
+
+\newpage
+
+## Generating Theorem Environments Using Pandoc Fence Code Blocks
+
+Bookdown has a lua filter called "latex-div.lua" which handles theorem environments for latex.
+
+::: {.theorem data-latex="Pythagorean Theorem"}
+
+**No Theorem Name Displayed**  
+If $c$ denotes the length of the hypotenuse and $a$
+ and $b$ denote the lengths of the other two sides,
+ the Pythagorean theorem can be expressed as the Pythagorean equation:
+$$a^2+b^2=c^2.$$
+
+:::
+
+::: {.corollary data-latex=""}
+
+For any angle $\theta$, we have
+$$
+\sin^2\theta+\cos^2\theta=1
+$$
+
+:::
+
+::: {.lemma data-latex="Pandoc Div Blocks"}
+
+Pandoc use `::: {#Id .Div_attributes}` to start and `:::`
+ to end a Div block. Such a block can be converted
+  to LaTeX environment using lua.
+
+:::
+
+The codes for the above three environments are in the following
+
+```Rmarkdown
+
+::: {.theorem data-latex="Pythagorean Theorem"}
+**No Theorem Name Displayed**  
+If $c$ denotes the length of the hypotenuse and $a$ and $b$
+ denote the lengths of the other two sides,
+  the Pythagorean theorem can be expressed as
+   the Pythagorean equation:
+$$a^2+b^2=c^2.$$
+
+:::
+
+::: {.corollary data-latex=""}
+
+For any angle $\theta$, we have
+$$
+\sin^2\theta+\cos^2\theta=1
+$$
+
+:::
+
+::: {.lemma data-latex="Pandoc Div Blocks"}
+
+Pandoc use `::: {#Id .Div_attributes}` to start
+ and `:::` to end a Div block.
+  Such a block can be converted to LaTeX environment using lua.
+
+:::
+
 
 ```
 

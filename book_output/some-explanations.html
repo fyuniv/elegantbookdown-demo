@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-03-03" />
+<meta name="date" content="2020-03-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,6 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="examples.html"/>
-<script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -341,8 +340,6 @@ $(document).ready(function () {
 
 
 
-
-
 <link rel="stylesheet" href="css\style.css" type="text/css" />
 </head>
 
@@ -392,7 +389,7 @@ $$\newcommand{\ii}{\mathbf{i}}$$
 $$\newcommand{\parll}{ {\mathbin{\parallel}} }$$
 $$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
 </div>
-<div id="some-explanations" class="section level1" number="1">
+<div id="some-explanations" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Some Explanations</h1>
 <p>The way to make the Bookdown generated TeX files works of the elegantbook class is to use <code>bookdown.post.latex</code> option to modify the generated tex file. Due the natural of the fancy definition of theorem environments in elegantbook, the current hack to unnamed theorem environments is to add <code>{}{}</code> to the end to <code>\BeginKnitrBlock{}</code> . For named theorem environments, the brackets <code>[</code> and <code>]</code> will be substibuted by braces <code>{</code> and <code>}</code>. In addition, an empty pair of braces <code>{}</code> will be added to the end of <code>\BeginKnitrBlock{}...</code>. In elegantbook, the last pair of brackets stores the label of the theorem envirionment which seems unnecessary for bookdown.</p>
 <p>An alternative approach define theorem environments is to use pandoc fence blocks and lua to translate them into tex environments. This is the way how “Think”, “Note”, and “Tip” environments were defined in this demo.</p>

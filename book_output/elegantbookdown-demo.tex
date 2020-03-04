@@ -25,7 +25,7 @@
 
   \author{Fei Ye}
 
-  \date{2020-03-03}
+  \date{2020-03-04}
 
 % logo 图案
 % 封面图片
@@ -416,8 +416,6 @@ An alternative approach define theorem environments is to use pandoc fence block
 \hypertarget{dont-be-tricked}{%
 \section{Don't Be Tricked}\label{dont-be-tricked}}
 
-\begin{rmdthink}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
@@ -425,8 +423,6 @@ An alternative approach define theorem environments is to use pandoc fence block
 \item
   A sheet of everyday copy paper is about 0.01 millimeter thick. Repeat folding along a different side 20 times. Now, how thick do you think the folded paper is?
 \end{enumerate}
-
-\end{rmdthink}
 
 \hypertarget{properties-of-exponents}{%
 \section{Properties of Exponents}\label{properties-of-exponents}}
@@ -485,8 +481,6 @@ The quotient raised to a power rule (for \(y\neq 0\).) \[\left(\dfrac{x}{y}\righ
 \bottomrule
 \end{longtable}
 
-\begin{rmdnote}
-
 \textbf{Order of Basic Mathematical Operations}
 
 In mathematics, the order of operations reflects conventions about which procedure should be performed first. There are four levels (from the highest to the lowest):
@@ -495,9 +489,7 @@ In mathematics, the order of operations reflects conventions about which procedu
 
 Within the same level, the convention is to perform from the left to the right.
 
-\end{rmdnote}
-
-\BeginKnitrBlock{example}{}{}
+\BeginKnitrBlock{example}
 \protect\hypertarget{exm:unnamed-chunk-1}{}{\label{exm:unnamed-chunk-1} }
 Simplify. \textbf{Write with positive exponents.}
 \[
@@ -505,7 +497,7 @@ Simplify. \textbf{Write with positive exponents.}
 \]
 \EndKnitrBlock{example}
 
-\BeginKnitrBlock{solution}{}{}
+\BeginKnitrBlock{solution}
 \iffalse{} {Solution. } \fi{}
 The idea is to simplify the base first and rewrite using positive exponents only.
 
@@ -520,17 +512,18 @@ The idea is to simplify the base first and rewrite using positive exponents only
 \]
 \EndKnitrBlock{solution}
 
-\begin{rmdtip}
-
 \textbf{Simplify (at least partially) the problem first}\\
 To avoid mistakes when working with negative exponents, it's better to apply the negative exponent rule to change negative exponents to positive exponents and simplify the base first.
 
-\end{rmdtip}
-
 \newpage
 
-\BeginKnitrBlock{theorem}{}{}
-\protect\hypertarget{thm:unnamed-chunk-3}{}{\label{thm:unnamed-chunk-3} }
+\hypertarget{generating-theorem-environments-using-r-bookdown-code-chunks}{%
+\section{Generating Theorem Environments Using R Bookdown Code Chunks}\label{generating-theorem-environments-using-r-bookdown-code-chunks}}
+
+Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
+
+\BeginKnitrBlock{theorem}{Pythagorean Theorem}{}
+\protect\hypertarget{thm:unnamed-chunk-3}{}{\label{thm:unnamed-chunk-3} \iffalse (Pythagorean Theorem) \fi{} }
 If \(c\) denotes the length of the hypotenuse and \(a\) and \(b\) denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 \[a^2+b^2=c^2.\]
 \EndKnitrBlock{theorem}
@@ -543,17 +536,84 @@ For any angle \(\theta\), we have
 \]
 \EndKnitrBlock{corollary}
 
-\BeginKnitrBlock{lemma}{Lemma A}{}
-\protect\hypertarget{lem:unnamed-chunk-5}{}{\label{lem:unnamed-chunk-5} \iffalse (Lemma A) \fi{} }
+\BeginKnitrBlock{lemma}{}{}
+\protect\hypertarget{lem:unnamed-chunk-5}{}{\label{lem:unnamed-chunk-5} }
 For any angle \(\theta\), projecting the terminal side to the \(x\)-axis forms a right triangle.
 \EndKnitrBlock{lemma}
+
+\newpage
+
+\hypertarget{generating-theorem-environments-using-pandoc-fence-code-blocks}{%
+\section{Generating Theorem Environments Using Pandoc Fence Code Blocks}\label{generating-theorem-environments-using-pandoc-fence-code-blocks}}
+
+Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
+
+\begin{theorem}{Pythagorean Theorem}{}
+
+\textbf{No Theorem Name Displayed}\\
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\end{theorem}
+
+\begin{corollary}{}{}
+
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+
+\end{corollary}
+
+\begin{lemma}{Pandoc Div Blocks}{}
+
+Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
+to end a Div block. Such a block can be converted
+to LaTeX environment using lua.
+
+\end{lemma}
+
+The codes for the above three environments are in the following
+
+\begin{verbatim}
+
+::: {.theorem data-latex="Pythagorean Theorem"}
+**No Theorem Name Displayed**  
+If $c$ denotes the length of the hypotenuse and $a$ and $b$
+ denote the lengths of the other two sides,
+  the Pythagorean theorem can be expressed as
+   the Pythagorean equation:
+$$a^2+b^2=c^2.$$
+
+:::
+
+::: {.corollary data-latex=""}
+
+For any angle $\theta$, we have
+$$
+\sin^2\theta+\cos^2\theta=1
+$$
+
+:::
+
+::: {.lemma data-latex="Pandoc Div Blocks"}
+
+Pandoc use `::: {#Id .Div_attributes}` to start
+ and `:::` to end a Div block.
+  Such a block can be converted to LaTeX environment using lua.
+
+:::
+
+\end{verbatim}
 
 \newpage
 
 \hypertarget{practice}{%
 \section{Practice}\label{practice}}
 
-\BeginKnitrBlock{exercise}{}{}
+\BeginKnitrBlock{exercise}
 \protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }
 Simplify. \textbf{Write with positive exponents.}
 
@@ -569,7 +629,7 @@ Simplify. \textbf{Write with positive exponents.}
 \end{enumerate}
 \EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}{}{}
+\BeginKnitrBlock{exercise}
 \protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }
 Simplify. \textbf{Write with positive exponents.}
 
@@ -585,7 +645,7 @@ Simplify. \textbf{Write with positive exponents.}
 \end{enumerate}
 \EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}{}{}
+\BeginKnitrBlock{exercise}
 \protect\hypertarget{exr:unnamed-chunk-8}{}{\label{exr:unnamed-chunk-8} }
 Simplify. \textbf{Write with positive exponents.}
 
@@ -601,7 +661,7 @@ Simplify. \textbf{Write with positive exponents.}
 \end{enumerate}
 \EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}{}{}
+\BeginKnitrBlock{exercise}
 \protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} }
 Simplify. \textbf{Write with positive exponents.}
 
@@ -617,7 +677,7 @@ Simplify. \textbf{Write with positive exponents.}
 \end{enumerate}
 \EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}{}{}
+\BeginKnitrBlock{exercise}
 \protect\hypertarget{exr:unnamed-chunk-10}{}{\label{exr:unnamed-chunk-10} }
 A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given \$4, will you buy a large watermelon or 4 smaller ones? Why?
 \EndKnitrBlock{exercise}
