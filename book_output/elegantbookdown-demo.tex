@@ -404,7 +404,9 @@ This work is licensed under a \href{https://creativecommons.org/licenses/by-nc-s
 \hypertarget{some-explanations}{%
 \chapter{Some Explanations}\label{some-explanations}}
 
-The way to make the Bookdown generated TeX files works of the elegantbook class is to use \texttt{bookdown.post.latex} option to modify the generated tex file. Due the natural of the fancy definition of theorem environments in elegantbook, the current hack of theorem environments is to add \texttt{\{\}\{\}} to the end to \texttt{\textbackslash{}BeginKnitrBlock\{\}}. Note that the name and label options for bookdown theorem environments still cann't be handled at this moment. An alternative option is to define theorem environments using pandoc fence blocks and lua to translate them into tex environments. This is the way, how Think, Note, and Tip environments work in this demo.
+The way to make the Bookdown generated TeX files works of the elegantbook class is to use \texttt{bookdown.post.latex} option to modify the generated tex file. Due the natural of the fancy definition of theorem environments in elegantbook, the current hack to unnamed theorem environments is to add \texttt{\{\}\{\}} to the end to \texttt{\textbackslash{}BeginKnitrBlock\{\}} . For named theorem environments, the brackets \texttt{{[}} and \texttt{{]}} will be substibuted by braces \texttt{\{} and \texttt{\}}. In addition, an empty pair of braces \texttt{\{\}} will be added to the end of \texttt{\textbackslash{}BeginKnitrBlock\{\}...}. In elegantbook, the last pair of brackets stores the label of the theorem envirionment which seems unnecessary for bookdown.
+
+An alternative approach define theorem environments is to use pandoc fence blocks and lua to translate them into tex environments. This is the way how ``Think'', ``Note'', and ``Tip'' environments were defined in this demo.
 
 \textbf{In the following Chapter, you will see a demo of how theorem environments work with elegantbook class.} If you have any suggestions/comments, please submit them to this repo. Thank you!
 
@@ -541,13 +543,18 @@ For any angle \(\theta\), we have
 \]
 \EndKnitrBlock{corollary}
 
+\BeginKnitrBlock{lemma}{Lemma A}{}
+\protect\hypertarget{lem:unnamed-chunk-5}{}{\label{lem:unnamed-chunk-5} \iffalse (Lemma A) \fi{} }
+For any angle \(\theta\), projecting the terminal side to the \(x\)-axis forms a right triangle.
+\EndKnitrBlock{lemma}
+
 \newpage
 
 \hypertarget{practice}{%
 \section{Practice}\label{practice}}
 
 \BeginKnitrBlock{exercise}{}{}
-\protect\hypertarget{exr:unnamed-chunk-5}{}{\label{exr:unnamed-chunk-5} }
+\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -563,7 +570,7 @@ Simplify. \textbf{Write with positive exponents.}
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{exercise}{}{}
-\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }
+\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -579,7 +586,7 @@ Simplify. \textbf{Write with positive exponents.}
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{exercise}{}{}
-\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }
+\protect\hypertarget{exr:unnamed-chunk-8}{}{\label{exr:unnamed-chunk-8} }
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -595,7 +602,7 @@ Simplify. \textbf{Write with positive exponents.}
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{exercise}{}{}
-\protect\hypertarget{exr:unnamed-chunk-8}{}{\label{exr:unnamed-chunk-8} }
+\protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} }
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -611,7 +618,7 @@ Simplify. \textbf{Write with positive exponents.}
 \EndKnitrBlock{exercise}
 
 \BeginKnitrBlock{exercise}{}{}
-\protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} }
+\protect\hypertarget{exr:unnamed-chunk-10}{}{\label{exr:unnamed-chunk-10} }
 A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given \$4, will you buy a large watermelon or 4 smaller ones? Why?
 \EndKnitrBlock{exercise}
 % 参考文献

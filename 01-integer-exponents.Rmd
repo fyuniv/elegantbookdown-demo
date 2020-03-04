@@ -91,6 +91,12 @@ $$
 
 ```
 
+```{lemma, name="Lemma A"}
+
+For any angle $\theta$, projecting the terminal side to the $x$-axis forms a right triangle.
+
+```
+
 \newpage
 
 ## Practice

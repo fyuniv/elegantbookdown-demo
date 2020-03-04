@@ -28,7 +28,8 @@ options(bookdown.post.latex = function(x) {
   x<-gsub('^\\\\iffalse.\\\\fi\\{\\}+?(\\\\)', '', x)
   x<-gsub('^\\\\tightlist', '', x)
 
-  x<-gsub('(\\\\BeginKnitrBlock\\{)+(.*)+(\\})', '\\1\\2\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\BeginKnitrBlock.*\\}$)', '\\1\\2\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\BeginKnitrBlock.*)+\\[(.*)\\]', '\\1\\{\\2\\}\\{\\}', x)
 })
 ```
 

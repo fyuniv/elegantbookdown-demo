@@ -1,5 +1,7 @@
 # Some Explanations
 
-The way to make the Bookdown generated TeX files works of the elegantbook class is to use `bookdown.post.latex` option to modify the generated tex file. Due the natural of the fancy definition of theorem environments in elegantbook, the current hack of theorem environments is to add `{}{}` to the end to `\BeginKnitrBlock{}`. Note that the name and label options for bookdown theorem environments still cann't be handled at this moment. An alternative option is to define theorem environments using pandoc fence blocks and lua to translate them into tex environments. This is the way, how Think, Note, and Tip environments work in this demo.
+The way to make the Bookdown generated TeX files works of the elegantbook class is to use `bookdown.post.latex` option to modify the generated tex file. Due the natural of the fancy definition of theorem environments in elegantbook, the current hack to unnamed theorem environments is to add `{}{}` to the end to `\BeginKnitrBlock{}` . For named theorem environments, the brackets `[` and `]` will be substibuted by braces `{` and `}`. In addition, an empty pair of braces `{}` will be added to the end of `\BeginKnitrBlock{}...`. In elegantbook, the last pair of brackets stores the label of the theorem envirionment which seems unnecessary  for bookdown.
+
+An alternative approach define theorem environments is to use pandoc fence blocks and lua to translate them into tex environments. This is the way how "Think", "Note", and "Tip" environments were defined in this demo.
 
 **In the following Chapter, you will see a demo of how theorem environments work with elegantbook class.**  If you have any suggestions/comments, please submit them to this repo. Thank you!
