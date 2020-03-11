@@ -2,7 +2,6 @@
 title: "A Demo of Elegantbook Bookdown"
 author: "Fei Ye"
 date: "`r Sys.Date()`"
-output: pdf_document
 description: This project demonstrates how to make the [Elegantbookdown](https://github.com/XiangyunHuang/ElegantBookdown) template created by [Xiangyun Huang](https://github.com/XiangyunHuang) work for theorem environments.
 documentclass: elegantbook
 github-repo: fyemath/elegantbookdown-demo

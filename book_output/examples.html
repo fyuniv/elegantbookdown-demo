@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-03-04" />
+<meta name="date" content="2020-03-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -517,7 +517,9 @@ For any angle <span class="math inline">\(\theta\)</span>, projecting the termin
 <p>Bookdown has a lua filter called “latex-div.lua” which handles theorem environments for latex.</p>
 <div class="theorem">
 <p><strong>No Theorem Name Displayed</strong><br />
-If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
+If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
+and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
 <span class="math display">\[a^2+b^2=c^2.\]</span></p>
 </div>
 <div class="corollary">
@@ -527,14 +529,18 @@ If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse a
 \]</span></p>
 </div>
 <div class="lemma">
-<p>Pandoc use <code>::: {#Id .Div_attributes}</code> to start and <code>:::</code> to end a Div block. Such a block can be converted to LaTeX environment using lua.</p>
+<p>Pandoc use <code>::: {#Id .Div_attributes}</code> to start and <code>:::</code>
+to end a Div block. Such a block can be converted
+to LaTeX environment using lua.</p>
 </div>
 <p>The codes for the above three environments are in the following</p>
 <pre class="rmarkdown"><code>
 ::: {.theorem data-latex=&quot;Pythagorean Theorem&quot;}
-
 **No Theorem Name Displayed**  
-If $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
+If $c$ denotes the length of the hypotenuse and $a$ and $b$
+ denote the lengths of the other two sides,
+  the Pythagorean theorem can be expressed as
+   the Pythagorean equation:
 $$a^2+b^2=c^2.$$
 
 :::
@@ -550,7 +556,9 @@ $$
 
 ::: {.lemma data-latex=&quot;Pandoc Div Blocks&quot;}
 
-Pandoc use `::: {#Id .Div_attributes}` to start and `:::` to end a Div block. Such a block can be converted to LaTeX environment using lua.
+Pandoc use `::: {#Id .Div_attributes}` to start
+ and `:::` to end a Div block.
+  Such a block can be converted to LaTeX environment using lua.
 
 :::
 
@@ -640,7 +648,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/fyemath/elegantbookdown-demo/01-integer-exponents.Rmd",
+"link": "https://github.com/fyemath/elegantbookdown-demo/blob/master/01-integer-exponents.Rmd",
 "text": "Edit"
 },
 "history": {
