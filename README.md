@@ -1,6 +1,8 @@
 ### 致谢
 
 该项目是基于以下项目的一个简单应用展示。
+
+- [Elegantbookdown](https://github.com/XiangyunHuang/ElegantBookdown)
   开发者 [黄湘云 XiangyunHuang](https://www.xiangyunhuang.com.cn/)
 - [ElegantBook](https://github.com/ElegantLaTeX/ElegantBook)
   开发者: [Ethan Deng 邓东升](https://ddswhu.me/) 和 [Liam Huang 黄晨成](https://liam.page/)
