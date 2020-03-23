@@ -11,7 +11,7 @@
 - [Pandoc](https://github.com/jgm/pandoc)
   开发者 [John MacFarlane](https://johnmacfarlane.net/)
 - [LaTex](https://www.latex-project.org/)
-  [LaTeX 项目组](https://www.latex-project.org/about/team/)
+  开发者 [LaTeX 项目组](https://www.latex-project.org/about/team/)
 
 相较于 [Elegantbookdown](https://github.com/XiangyunHuang/ElegantBookdown) 和 [ElegantBook](https://github.com/ElegantLaTeX/ElegantBook) 
 - [Elegantbookdown](https://github.com/XiangyunHuang/ElegantBookdown)， 加入了一些新的定理环境，例如`rmdnote`，`rmdthink`，`rmdtips`.
