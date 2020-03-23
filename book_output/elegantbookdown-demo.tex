@@ -25,7 +25,7 @@
 
   \author{Fei Ye}
 
-  \date{2020-03-11}
+  \date{2020-03-22}
 
 % logo 图案
 % 封面图片
@@ -176,6 +176,8 @@ margin=1in
 \definecolor{second}{RGB}{175,153,8}%
 \definecolor{third}{RGB}{244,105,102}%
 
+
+
 \renewenvironment{example}[1][]{
   \refstepcounter{exam}
   \par\noindent\textbf{\color{main}{\examplename} \theexam #1}
@@ -210,12 +212,27 @@ margin=1in
     enlarge left by=0mm,
 }
 
+\ifdefstring{\ELEGANT@lang}{cn}{
+\newcommand{\rmdnotename}{注意}
+\newcommand{\tipname}{提示}
+\newcommand{\warnname}{警告}
+\newcommand{\thinkname}{思考}
+}{\relax}
+
+\ifdefstring{\ELEGANT@lang}{en}{
+  \setlength\parindent{2em}
+  \newcommand{\rmdnotename}{Note}
+  \newcommand{\tipname}{Tips}
+  \newcommand{\warnname}{Warning}
+  \newcommand{\thinkname}{Think}
+}{\relax}
+
 \newenvironment{rmdnote}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
     \makebox[-3pt][r]{\color{red!90}\size{8}{\textdbend}\,\,}
     \begin{tcolorbox}[
-    title={\textbf{\color{second}Note}},
+    title={\textbf{\color{second}\rmdnotename}},
     title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
     colback=red!10!white,
     ]
@@ -231,7 +248,7 @@ margin=1in
 	\makebox[-3pt][r]{\color{red!90}\size{12}{\HandRight}\,\,}
     \begin{tcolorbox}[
     enhanced,
-    title={\textbf{\color{second}Tips}},
+    title={\textbf{\color{second}\tipname}},
     title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
     colback=cyan!10!white,
     ]
@@ -247,7 +264,7 @@ margin=1in
 	\makebox[-4pt][r]{\color{green!90}\size{12}{\faLightbulbO}\,\,}
     \begin{tcolorbox}[
     enhanced,
-    title={\textbf{\color{second}Think}},
+    title={\textbf{\color{second}\thinkname}},
     title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
     colback=green!20!white,
     ]
@@ -416,6 +433,8 @@ An alternative approach define theorem environments is to use pandoc fence block
 \hypertarget{dont-be-tricked}{%
 \section{Don't Be Tricked}\label{dont-be-tricked}}
 
+\begin{rmdthink}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
@@ -423,6 +442,8 @@ An alternative approach define theorem environments is to use pandoc fence block
 \item
   A sheet of everyday copy paper is about 0.01 millimeter thick. Repeat folding along a different side 20 times. Now, how thick do you think the folded paper is?
 \end{enumerate}
+
+\end{rmdthink}
 
 \hypertarget{properties-of-exponents}{%
 \section{Properties of Exponents}\label{properties-of-exponents}}
@@ -481,6 +502,8 @@ The quotient raised to a power rule (for \(y\neq 0\).) \[\left(\dfrac{x}{y}\righ
 \bottomrule
 \end{longtable}
 
+\begin{rmdnote}
+
 \textbf{Order of Basic Mathematical Operations}
 
 In mathematics, the order of operations reflects conventions about which procedure should be performed first. There are four levels (from the highest to the lowest):
@@ -488,6 +511,8 @@ In mathematics, the order of operations reflects conventions about which procedu
 \textbf{Parenthesis}; \textbf{Exponentiation}; \textbf{Multiplication and Division}; \textbf{Addition and Subtraction}.
 
 Within the same level, the convention is to perform from the left to the right.
+
+\end{rmdnote}
 
 \BeginKnitrBlock{example}
 \protect\hypertarget{exm:unnamed-chunk-1}{}{\label{exm:unnamed-chunk-1} }
@@ -512,8 +537,12 @@ The idea is to simplify the base first and rewrite using positive exponents only
 \]
 \EndKnitrBlock{solution}
 
+\begin{rmdtip}
+
 \textbf{Simplify (at least partially) the problem first}\\
 To avoid mistakes when working with negative exponents, it's better to apply the negative exponent rule to change negative exponents to positive exponents and simplify the base first.
+
+\end{rmdtip}
 
 \newpage
 
@@ -578,7 +607,6 @@ to LaTeX environment using lua.
 The codes for the above three environments are in the following
 
 \begin{verbatim}
-
 ::: {.theorem data-latex="Pythagorean Theorem"}
 **No Theorem Name Displayed**  
 If $c$ denotes the length of the hypotenuse and $a$ and $b$

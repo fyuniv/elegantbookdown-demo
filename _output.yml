@@ -29,4 +29,4 @@ bookdown::pdf_book:
   keep_tex: yes
   toc_depth: 1
   template: latex/template.tex
-  pandoc_args: ["--top-level-division=chapter", "--lua-filter=latex/latex-div.lua"]
+  pandoc_args: ["--top-level-division=chapter", "--lua-filter=latex/lua_for_latex.lua"]

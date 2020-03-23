@@ -139,6 +139,8 @@ margin=1in
 \definecolor{second}{RGB}{175,153,8}%
 \definecolor{third}{RGB}{244,105,102}%
 
+
+
 \renewenvironment{example}[1][]{
   \refstepcounter{exam}
   \par\noindent\textbf{\color{main}{\examplename} \theexam #1}
@@ -173,12 +175,27 @@ margin=1in
     enlarge left by=0mm,
 }
 
+\ifdefstring{\ELEGANT@lang}{cn}{
+\newcommand{\rmdnotename}{注意}
+\newcommand{\tipname}{提示}
+\newcommand{\warnname}{警告}
+\newcommand{\thinkname}{思考}
+}{\relax}
+
+\ifdefstring{\ELEGANT@lang}{en}{
+  \setlength\parindent{2em}
+  \newcommand{\rmdnotename}{Note}
+  \newcommand{\tipname}{Tips}
+  \newcommand{\warnname}{Warning}
+  \newcommand{\thinkname}{Think}
+}{\relax}
+
 \newenvironment{rmdnote}{
 	\vspace*{0.5\baselineskip}
     \par\noindent
     \makebox[-3pt][r]{\color{red!90}\size{8}{\textdbend}\,\,}
     \begin{tcolorbox}[
-    title={\textbf{\color{second}Note}},
+    title={\textbf{\color{second}\rmdnotename}},
     title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
     colback=red!10!white,
     ]
@@ -194,7 +211,7 @@ margin=1in
 	\makebox[-3pt][r]{\color{red!90}\size{12}{\HandRight}\,\,}
     \begin{tcolorbox}[
     enhanced,
-    title={\textbf{\color{second}Tips}},
+    title={\textbf{\color{second}\tipname}},
     title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
     colback=cyan!10!white,
     ]
@@ -210,7 +227,7 @@ margin=1in
 	\makebox[-4pt][r]{\color{green!90}\size{12}{\faLightbulbO}\,\,}
     \begin{tcolorbox}[
     enhanced,
-    title={\textbf{\color{second}Think}},
+    title={\textbf{\color{second}\thinkname}},
     title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
     colback=green!20!white,
     ]
