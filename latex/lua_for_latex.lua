@@ -4,68 +4,135 @@
 -- More examples can be found at https://pandoc.org/lua-filters.html
 
 function Span(el)
-  if el.classes:includes("todo") then
+    if el.classes:includes("todo") then
     return {
-      pandoc.RawInline("latex", "\\textcolor{red}{\\textbf{TODO: }"),
-      el,
-      pandoc.RawInline("latex", "}")
+        pandoc.RawInline("latex", "\\textcolor{red}{\\textbf{TODO: }"),
+        el,
+        pandoc.RawInline("latex", "}")
     }
-  end
+    end
 end
 
 function Div(el)
-  if el.classes:includes("rmdthink") then
+    local thmname=""
+    local thmlabel=""
+    if el.attributes.name then
+        thmname=el.attributes.name
+    end
+    if el.attributes.label then
+        thmlabel=el.attributes.label
+    end
+
+    if el.classes:includes("thm") then
+        return {
+            pandoc.RawBlock("latex", table.concat({"\\begin{theorem}", "{", thmname, "}", "{", thmlabel, "}"})),
+            el,
+            pandoc.RawBlock("latex", "\\end{theorem}")
+        }
+    end
+
+    if el.classes:includes("defn") then
     return {
-      pandoc.RawBlock("latex", "\\begin{rmdthink}"),
-      el,
-      pandoc.RawBlock("latex", "\\end{rmdthink}")
+        pandoc.RawBlock("latex", table.concat({"\\begin{definition}", "{", thmname, "}", "{", thmlabel, "}" })),
+        el,
+        pandoc.RawBlock("latex", "\\end{definition}")
     }
-  end
-  if el.classes:includes("rmdnote") then
+    end
+    if el.classes:includes("exam") then
     return {
-      pandoc.RawBlock("latex", "\\begin{rmdnote}"),
-      el,
-      pandoc.RawBlock("latex", "\\end{rmdnote}")
+        pandoc.RawBlock("latex", "\\begin{example}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{example}")
     }
-  end
-  if el.classes:includes("rmdtip") then
+    end
+    if el.classes:includes("exer") then
+        return {
+            pandoc.RawBlock("latex", "\\begin{exercise}"),
+            el,
+            pandoc.RawBlock("latex", "\\end{exercise}")
+        }
+    end
+    if el.classes:includes("sol") then
     return {
-      pandoc.RawBlock("latex", "\\begin{rmdtip}"),
-      el,
-      pandoc.RawBlock("latex", "\\end{rmdtip}")
+        pandoc.RawBlock("latex", "\\begin{solution}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{solution}")
     }
-  end
-  if el.classes:includes("twocols") then
+    end
+    if el.classes:includes("lem") then
     return {
-      pandoc.RawBlock("latex", "\\begin{multicols}{2}"),
-      el,
-      pandoc.RawBlock("latex", "\\end{multicols}")
+        pandoc.RawBlock("latex", table.concat({"\\begin{lemma}", "{", thmname, "}", "{", thmlabel, "}" }) ),
+        el,
+        pandoc.RawBlock("latex", "\\end{lemma}")
     }
-  end
-  if el.classes:includes("threecols") then
+    end
+    if el.classes:includes("cor") then
     return {
-      pandoc.RawBlock("latex", "\\begin{multicols}{3}"),
-      el,
-      pandoc.RawBlock("latex", "\\end{multicols}")
+        pandoc.RawBlock("latex", table.concat({"\\begin{corollary}", "{", thmname, "}", "{", thmlabel, "}" }) ),
+        el,
+        pandoc.RawBlock("latex", "\\end{corollary}")
     }
-  end
-  if el.classes:includes("fourcols") then
+    end
+    if el.classes:includes("prop") then
     return {
-      pandoc.RawBlock("latex", "\\begin{multicols}{4}"),
-      el,
-      pandoc.RawBlock("latex", "\\end{multicols}")
+        pandoc.RawBlock("latex", table.concat({"\\begin{proposition}", "{", thmname, "}", "{", thmlabel, "}" }) ),
+        el,
+        pandoc.RawBlock("latex", "\\end{proposition}")
     }
-  end
+    end
+
+    if el.classes:includes("rmdthink") then
+    return {
+        pandoc.RawBlock("latex", "\\begin{rmdthink}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{rmdthink}")
+    }
+    end
+    if el.classes:includes("rmdnote") then
+    return {
+        pandoc.RawBlock("latex", "\\begin{rmdnote}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{rmdnote}")
+    }
+    end
+    if el.classes:includes("rmdtip") then
+    return {
+        pandoc.RawBlock("latex", "\\begin{rmdtip}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{rmdtip}")
+    }
+    end
+    if el.classes:includes("twocols") then
+    return {
+        pandoc.RawBlock("latex", "\\begin{multicols}{2}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{multicols}")
+    }
+    end
+    if el.classes:includes("threecols") then
+    return {
+        pandoc.RawBlock("latex", "\\begin{multicols}{3}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{multicols}")
+    }
+    end
+    if el.classes:includes("fourcols") then
+    return {
+        pandoc.RawBlock("latex", "\\begin{multicols}{4}"),
+        el,
+        pandoc.RawBlock("latex", "\\end{multicols}")
+    }
+    end
 end
 
 function Image (el)
     if el.classes:includes("center") then
     return {
-      pandoc.RawInline('latex', '\\hfill\\break{\\centering'),
-      el,
-      pandoc.RawInline('latex', '\\par}')
+        pandoc.RawInline('latex', '\\hfill\\break{\\centering'),
+        el,
+        pandoc.RawInline('latex', '\\par}')
     }
-  end
+    end
 end
 
 -- Building images with TikZ from https://pandoc.org/lua-filters.html

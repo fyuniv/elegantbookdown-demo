@@ -31,9 +31,10 @@ options(bookdown.post.latex = function(x) {
 
   x<-gsub('(^\\\\BeginKnitrBlock\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
   x<-gsub('(^\\\\BeginKnitrBlock\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+\\[(.*)\\]', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
-  x<-gsub('(^\\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
-  x<-gsub('(^\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+(.*)', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
 })
+#   x<-gsub('(^\\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
+#   x<-gsub('(^\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+(.*)', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
+# })
 ```
 
 ```{r fig_setting, include=FALSE}

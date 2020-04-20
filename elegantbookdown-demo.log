@@ -1,0 +1,2079 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.4.19)  20 APR 2020 14:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**elegantbookdown-demo.tex
+(./elegantbookdown-demo.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06>
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/elegantbook/elegantb
+ook.cls
+Document Class: elegantbook 2020/04/12 v3.11 ElegantBook document class
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.
+sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.st
+y
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkey
+s.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count163
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count164
+\c@chapter=\count165
+\c@section=\count166
+\c@subsection=\count167
+\c@subsubsection=\count168
+\c@paragraph=\count169
+\c@subparagraph=\count170
+\c@figure=\count171
+\c@table=\count172
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.st
+y
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarer
+r.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdef
+inekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescap
+e.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.st
+y
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxma
+cro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.st
+y
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen135
+\Hy@linkcounter=\count173
+\Hy@pagecounter=\count174
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.
+sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count175
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count176
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen136
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintc
+alc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count177
+\Field@Width=\dimen137
+\Fld@charsize=\dimen138
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.
+sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count178
+\c@Item=\count179
+\c@Hfootnote=\count180
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2020/01/14 v7.00d Hyperref driver for XeTeX
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringen
+c.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box45
+\c@Hy@AnnotLevel=\count181
+\HyField@AnnotCount=\count182
+\Fld@listcount=\count183
+\c@bookmark@seq@number=\count184
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerun
+filecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/atveryend/atveryend.
+sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniq
+uecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 105.
+Package hyperref Info: Option `unicode' set `true' on input line 105.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 105.
+
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 105.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/se-ascii
+-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
+
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 105.
+Package hyperref Info: Option `plainpages' set `false' on input line 105.
+Package hyperref Info: Option `linktocpage' set `true' on input line 105.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.st
+y
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count185
+\Gm@cntv=\count186
+\c@Gm@tempcnt=\count187
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.st
+y
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/comment/comment.st
+y
+\CommentStream=\write3
+Excluding comment 'comment') (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/t
+ex/latex/newtx/newtxtext.sty
+Package: newtxtext 2020/03/02 v1.625
+
+`newtxtext' v1.625, 2020/03/02 Text macros taking advantage of TeX-Gyre Termes 
+fonts (msharpe)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes.st
+y
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+\ntx@fs=\dimen147
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.te
+x
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.t
+ex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count188
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
+ 112.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
+File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 112.
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 75.
+)
+LaTeX Info: Redefining \textin on input line 99.
+\ntxt@cntz=\count189
+LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 263.
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/anyfontsize/anyfonts
+ize.sty
+Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.d
+ef
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.st
+y
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.st
+y
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+)
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.sty 
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-04-06 L3 programming layer (loader) 
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-
+xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-03-12 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count190
+\l__pdf_internal_box=\box46
+\g__pdf_backend_object_int=\count191
+\g__pdf_backend_annotation_int=\count192
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xp
+arse.sty
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count193
+\g__xparse_grabber_int=\count194
+\l__xparse_m_args_int=\count195
+\l__xparse_v_nesting_int=\count196
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.ltd.te
+x
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.st
+y
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count197
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/enumerate.st
+y
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks19
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.st
+y
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip52
+\enit@outerparindent=\dimen150
+\enit@toks=\toks20
+\enit@inbox=\box47
+\enit@count@id=\count198
+\enitdp@description=\count199
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
+y
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen151
+\captionmargin@=\dimen152
+\captionwidth=\dimen153
+\caption@tempdima=\dimen154
+\caption@indent=\dimen155
+\caption@parindent=\dimen156
+\caption@hangindent=\dimen157
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count266
+\c@continuedfloat=\count267
+Package caption Info: hyperref package is loaded.
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
+y
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip53
+For additional information on amsmath, use the `?' option.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen158
+)) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen159
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen160
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count273
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip17
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks22
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks23
+\eqnshift@=\dimen161
+\alignsep@=\dimen162
+\tagshift@=\dimen163
+\tagwidth@=\dimen164
+\totwidth@=\dimen165
+\lineht@=\dimen166
+\@envbody=\toks24
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/mathrsfs.st
+y
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.st
+y
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen167
+\lightrulewidth=\dimen168
+\cmidrulewidth=\dimen169
+\belowrulesep=\dimen170
+\belowbottomsep=\dimen171
+\aboverulesep=\dimen172
+\abovetopsep=\dimen173
+\cmidrulesep=\dimen174
+\cmidrulekern=\dimen175
+\defaultaddspace=\dimen176
+\@cmidla=\count280
+\@cmidlb=\count281
+\@aboverulesep=\dimen177
+\@belowrulesep=\dimen178
+\@thisruleclass=\count282
+\@lastruleclass=\count283
+\@thisrulewidth=\dimen179
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count284
+\mult@box=\box50
+\multicol@leftmargin=\dimen180
+\c@unbalance=\count285
+\c@collectmore=\count286
+\doublecol@number=\count287
+\multicoltolerance=\count288
+\multicolpretolerance=\count289
+\full@width=\dimen181
+\page@free=\dimen182
+\premulticols=\dimen183
+\postmulticols=\dimen184
+\multicolsep=\skip56
+\multicolbaselineskip=\skip57
+\partial@page=\box51
+\last@line=\box52
+\maxbalancingoverflow=\dimen185
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@gfirstbox=\box55
+\mult@firstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\c@minrows=\count290
+\c@columnbadness=\count291
+\c@finalcolumnbadness=\count292
+\last@try=\dimen186
+\multicolovershoot=\dimen187
+\multicolundershoot=\dimen188
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count293
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.st
+y
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip58
+\multirow@cntb=\count294
+\multirow@dima=\skip59
+\bigstrutjot=\dimen189
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.st
+y
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count295
+\FV@InFile=\read2
+\FV@TabBox=\box96
+\c@FancyVerbLine=\count296
+\FV@StepNumber=\count297
+\FV@OutFile=\write4
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.st
+y
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen190
+\ar@mcellbox=\box97
+\extrarowheight=\dimen191
+\NC@list=\toks26
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box98
+)
+\rotheadsize=\dimen192
+\c@nlinenum=\count298
+\TeXr@lab=\toks27
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/hologo/hologo.st
+y
+Package: hologo 2019/12/05 v1.14 A logo collection with bookmark support (HO)
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/ti
+kz.sty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.s
+ty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs
+.sty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfu
+til-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen193
+\pgfutil@tempdimb=\dimen194
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfu
+til-common-lists.tex))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfu
+til-latex.def
+\pgfutil@abb=\box99
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfr
+cs.code.tex
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.t
+ex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfco
+re.sty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfs
+ys.sty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+fsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfk
+eys.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfk
+eysfiltered.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen195
+\pgf@y=\dimen196
+\pgf@xa=\dimen197
+\pgf@ya=\dimen198
+\pgf@xb=\dimen199
+\pgf@yb=\dimen256
+\pgf@xc=\dimen257
+\pgf@yc=\dimen258
+\pgf@xd=\dimen259
+\pgf@yd=\dimen260
+\w@pgf@writea=\write5
+\r@pgf@reada=\read3
+\c@pgf@counta=\count299
+\c@pgf@countb=\count300
+\c@pgf@countc=\count301
+\c@pgf@countd=\count302
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count303
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+f.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+fsys-xetex.def
+File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+fsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+fsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)
+\pgfsys@objnum=\count304
+)))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+fsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count305
+\pgfsyssoftpath@bigbuffer@items=\count306
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pg
+fsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+core.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.c
+ode.tex
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathca
+lc.code.tex
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathut
+il.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathpa
+rser.code.tex
+\pgfmath@dimen=\dimen261
+\pgfmath@count=\count307
+\pgfmath@box=\box100
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.code.tex
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.basic.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.trigonometric.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.random.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.comparison.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.base.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.round.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.misc.code.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfu
+nctions.integerarithmetics.code.tex)))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfl
+oat.code.tex
+\c@pgfmathroundto@lastzeros=\count308
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.co
+de.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corepoints.code.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen262
+\pgf@picmaxx=\dimen263
+\pgf@picminy=\dimen264
+\pgf@picmaxy=\dimen265
+\pgf@pathminx=\dimen266
+\pgf@pathmaxx=\dimen267
+\pgf@pathminy=\dimen268
+\pgf@pathmaxy=\dimen269
+\pgf@xx=\dimen270
+\pgf@xy=\dimen271
+\pgf@yx=\dimen272
+\pgf@yy=\dimen273
+\pgf@zx=\dimen274
+\pgf@zy=\dimen275
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen276
+\pgf@path@lasty=\dimen277
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen278
+\pgf@shorten@start@additional=\dimen279
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corescopes.code.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box101
+\pgf@hbox=\box102
+\pgf@layerbox@main=\box103
+\pgf@picture@serial@count=\count309
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen280
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen281
+\pgf@pt@y=\dimen282
+\pgf@pt@temp=\dimen283
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corearrows.code.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen284
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen285
+\pgf@sys@shading@range@num=\count310
+\pgf@shadingcount=\count311
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box104
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corelayers.code.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+coretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgf
+corerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmod
+uleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box105
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmod
+uleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pg
+fcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen286
+\pgf@nodesepend=\dimen287
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pg
+fcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor
+.sty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkey
+s.sty
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfk
+eys.code.tex))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.c
+ode.tex))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgff
+or.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.c
+ode.tex)
+\pgffor@iter=\dimen288
+\pgffor@skip=\dimen289
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/
+tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgfl
+ibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count312
+\pgfplotmarksize=\dimen290
+)
+\tikz@lastx=\dimen291
+\tikz@lasty=\dimen292
+\tikz@lastxsaved=\dimen293
+\tikz@lastysaved=\dimen294
+\tikz@lastmovetox=\dimen295
+\tikz@lastmovetoy=\dimen296
+\tikzleveldistance=\dimen297
+\tikzsiblingdistance=\dimen298
+\tikz@figbox=\box106
+\tikz@figbox@bg=\box107
+\tikz@tempbox=\box108
+\tikz@tempbox@bg=\box109
+\tikztreelevel=\count313
+\tikznumberofchildren=\count314
+\tikznumberofcurrentchild=\count315
+\tikz@fig@count=\count316
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmod
+ulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count317
+\pgfmatrixcurrentcolumn=\count318
+\pgf@matrix@numberofcolumns=\count319
+)
+\tikz@expandcount=\count320
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@layerbox@background=\box110
+\pgf@layerboxsaved@background=\box111
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/
+tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgfl
+ibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.st
+y
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box112
+\beforetitleunit=\skip62
+\aftertitleunit=\skip63
+\ttl@plus=\dimen299
+\ttl@minus=\dimen300
+\ttl@toksa=\toks40
+\titlewidth=\dimen301
+\titlewidthlast=\dimen302
+\titlewidthfirst=\dimen303
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titleps.sty
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/apptools/apptools.st
+y
+Package: apptools 2012/11/28 v1.0 Tools for customizing appendices
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/appendix/appendix.st
+y
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count321
+\c@@ppsavesec=\count322
+\c@@ppsaveapp=\count323
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/manfnt/manfnt.sty
+Package: manfnt 1999/07/010.2LaTeX2e manfnt package
+\dbend@height=\skip64
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bbding/bbding.sty
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.
+sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read4
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.st
+y
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspace
+s.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box113
+\tcb@upperbox=\box114
+\tcb@lowerbox=\box115
+\tcb@phantombox=\box116
+\c@tcbbreakpart=\count324
+\c@tcblayer=\count325
+\tcolorbox@number=\count326
+\tcb@temp=\box117
+\tcb@temp=\box118
+\tcb@temp=\box119
+\tcb@temp=\box120
+\tcb@out=\write6
+\tcb@record@out=\write7
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbraster.
+code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.22'
+\c@tcbrastercolumn=\count327
+\c@tcbrasterrow=\count328
+\c@tcbraster=\count329
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskins.c
+ode.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
+\tcb@waterbox=\box121
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskinsji
+gsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
+))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbbreakab
+le.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.22'
+\tcb@testbox=\box122
+\tcb@totalupperbox=\box123
+\tcb@totallowerbox=\box124
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbhooks.c
+ode.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.22'
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbtheorem
+s.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.22'
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbfitting
+.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
+\tcbfitdim=\dimen304
+\tcb@lowerfitdim=\dimen305
+\tcb@upperfitdim=\dimen306
+\tcb@cur@hbadness=\count330
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbxparse.
+code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.22'
+))
+\c@tcb@cnt@definition=\count331
+\c@tcb@cnt@theorem=\count332
+\c@tcb@cnt@postulate=\count333
+\c@tcb@cnt@axiom=\count334
+\c@tcb@cnt@proposition=\count335
+\c@tcb@cnt@corollary=\count336
+\c@tcb@cnt@lemma=\count337
+\c@exam=\count338
+\c@exer=\count339
+\c@prob=\count340
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adforn/adforn.sty
+Package: adforn 2019/10/13 v1.1b adforn CFR
+LaTeX Font Info:    Trying to load font information for U+OrnementsADF on input
+ line 4.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adforn/uornementsadf
+.fd))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.st
+y
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.st
+y
+\lst@mode=\count341
+\lst@gtempboxa=\box125
+\lst@token=\toks43
+\lst@length=\count342
+\lst@currlwidth=\dimen307
+\lst@column=\count343
+\lst@pos=\count344
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count345
+\lst@lineno=\count346
+\lst@maxwidth=\dimen310
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count347
+\lst@skipnumbers=\count348
+\lst@framebox=\box126
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.cf
+g
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang1.st
+y
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang2.st
+y
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang3.st
+y
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang1.st
+y
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang2.st
+y
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang3.st
+y
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang1.st
+y
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang2.st
+y
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstlang3.st
+y
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+LaTeX Info: Redefining \bm on input line 209.
+)) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.s
+ty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip74
+\LTright=\skip75
+\LTpre=\skip76
+\LTpost=\skip77
+\LTchunksize=\count349
+\LTcapwidth=\dimen311
+\LT@head=\box127
+\LT@firsthead=\box128
+\LT@foot=\box129
+\LT@lastfoot=\box130
+\LT@cols=\count350
+\LT@rows=\count351
+\c@LT@tables=\count352
+\c@LT@chunks=\count353
+\LT@p@ftn=\toks44
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip78
+\fb@frw=\dimen312
+\fb@frh=\dimen313
+\FrameRule=\dimen314
+\FrameSep=\dimen315
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count354
+\sf@farskip=\skip79
+\sf@captopadj=\dimen316
+\sf@capskip=\skip80
+\sf@nearskip=\skip81
+\c@subfigure=\count355
+\c@subfigure@save=\count356
+\c@lofdepth=\count357
+\c@subtable=\count358
+\c@subtable@save=\count359
+\c@lotdepth=\count360
+\sf@top=\skip82
+\sf@bottom=\skip83
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count361
+\float@exts=\toks45
+\float@box=\box131
+\@float@everytoks=\toks46
+\@floatcapt=\box132
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/03/22 3.42 The Babel package
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/03/22 3.42 Babel switching mechanism
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-english/engl
+ish.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/03/22 3.42 Babel common definitions
+\babel@savecnt=\count362
+\U@D=\dimen317
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def
+))
+\bbl@readstream=\read5
+\bbl@dirlevel=\count363
+)
+Package babel Info: \l@british = using hyphenrules for english
+(babel)             (\language0) on input line 82.
+Package babel Info: \l@UKenglish = using hyphenrules for english
+(babel)             (\language0) on input line 83.
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for english
+(babel)             (\language0) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for english
+(babel)             (\language0) on input line 108.
+)) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
+ty
+\wrapoverhang=\dimen318
+\WF@size=\dimen319
+\c@WF@wrappedlines=\count364
+\WF@box=\box133
+\WF@everypar=\toks47
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mathtools.
+sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count365
+\calc@Bcount=\count366
+\calc@Adimen=\dimen320
+\calc@Bdimen=\dimen321
+\calc@Askip=\skip84
+\calc@Bskip=\skip85
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count367
+\calc@Cskip=\skip86
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mhsetup.st
+y
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count368
+\l_MT_multwidth_dim=\dimen322
+\origjot=\skip87
+\l_MT_shortvdotswithinadjustabove_dim=\dimen323
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen324
+\l_MT_above_intertext_sep=\dimen325
+\l_MT_below_intertext_sep=\dimen326
+\l_MT_above_shortintertext_sep=\dimen327
+\l_MT_below_shortintertext_sep=\dimen328
+\xmathstrut@box=\box134
+\xmathstrut@dim=\dimen329
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fontawes
+ome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fontawes
+omesymbols-generic.tex)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.st
+y
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xe
+tex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count369
+\l__fontspec_language_int=\count370
+\l__fontspec_strnum_int=\count371
+\l__fontspec_tmp_int=\count372
+\l__fontspec_tmpa_int=\count373
+\l__fontspec_tmpb_int=\count374
+\l__fontspec_tmpc_int=\count375
+\l__fontspec_em_int=\count376
+\l__fontspec_emdef_int=\count377
+\l__fontspec_strong_int=\count378
+\l__fontspec_strongdef_int=\count379
+\l__fontspec_tmpa_dim=\dimen330
+\l__fontspec_tmpb_dim=\dimen331
+\l__fontspec_tmpc_dim=\dimen332
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cf
+g)))
+
+Package fontspec Info: Could not resolve font "FontAwesome/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FontAwesome/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "FontAwesome/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'FontAwesome(0)' created for font
+(fontspec)             'FontAwesome' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FontAwesome/OT:language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fontawes
+omesymbols-xeluatex.tex))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode
+-math.sty
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode
+-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/
+l3keys2e.sty
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count380
+\g__um_fonts_used_int=\count381
+\l__um_primecount_int=\count382
+\g__um_primekern_muskip=\muskip18
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode
+-math-table.tex)))
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.
+sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks48
+\MT@count=\count383
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen333
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count384
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype-
+xetex.def
+File: microtype-xetex.def 2019/11/18 v2.7d Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 258.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.
+cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+)) (c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2020/01/24 v 0.09 modify URL breaks
+)
+LaTeX Font Info:    Trying to load font information for TU+ntxtlf on input line
+ 385.
+LaTeX Font Info:    No file TUntxtlf.fd. on input line 385.
+
+LaTeX Font Warning: Font shape `TU/ntxtlf/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 385.
+
+(./elegantbookdown-demo.aux
+
+LaTeX Warning: Label `thm:pythagThm' multiply defined.
+
+)
+\openout1 = `elegantbookdown-demo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 385.
+LaTeX Font Info:    ... okay on input line 385.
+\AtBeginShipoutBox=\box135
+Package hyperref Info: Link coloring ON on input line 385.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.st
+y
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/get
+titlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count385
+)
+LaTeX Info: Redefining \ref on input line 385.
+LaTeX Info: Redefining \pageref on input line 385.
+LaTeX Info: Redefining \nameref on input line 385.
+(./elegantbookdown-demo.out) (./elegantbookdown-demo.out)
+\@outlinefile=\write8
+\openout8 = `elegantbookdown-demo.out'.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-73.1235pt
+* \headheight=61.74242pt
+* \headsep=11.38109pt
+* \topskip=11.0pt
+* \footskip=34.1433pt
+* \marginparwidth=53.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@mv@tabular=\count386
+\c@mv@boldtabular=\count387
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.st
+y
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.st
+y
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks49
+\footnotemargin=\dimen334
+\c@pp@next@reset=\count388
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+) ABD: EveryShipout initializing macros
+\c@lstlisting=\count389
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/ntxtlf/m/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/ntxtlf/m/it on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/ntxtlf/b/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 385.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 385.
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
+"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
+"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,
+Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
+},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->"[latinmodern-math.otf]/OT:script=math;language
+=dflt;"<6.57-9.3075>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=
+0;"<-6.57>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;
+"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 385.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 385.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 385.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
+t line 385.
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,
+Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
+},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =7.41315pt\relax \fontdimen 9\font
+(fontspec)             =4.3143pt\relax \fontdimen 10\font =4.8618pt\relax
+(fontspec)             \fontdimen 11\font =7.5117pt\relax \fontdimen 12\font
+(fontspec)             =3.77776pt\relax \fontdimen 13\font =3.97485pt\relax
+(fontspec)             \fontdimen 14\font =3.97485pt\relax \fontdimen 15\font
+(fontspec)             =3.16455pt\relax \fontdimen 16\font =2.70465pt\relax
+(fontspec)             \fontdimen 17\font =2.70465pt\relax \fontdimen 18\font
+(fontspec)             =2.7375pt\relax \fontdimen 19\font =2.19pt\relax
+(fontspec)             \fontdimen 22\font =2.7375pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[1.0001]"[latinmodern-math.otf]/OT:script=mat
+h;language=dflt;"<6.57-9.3075>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=0;"<-6.57>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =7.41315pt\relax \fontdimen 9\font
+(fontspec)             =4.3143pt\relax \fontdimen 10\font =4.8618pt\relax
+(fontspec)             \fontdimen 11\font =7.5117pt\relax \fontdimen 12\font
+(fontspec)             =3.77776pt\relax \fontdimen 13\font =3.97485pt\relax
+(fontspec)             \fontdimen 14\font =3.97485pt\relax \fontdimen 15\font
+(fontspec)             =3.16455pt\relax \fontdimen 16\font =2.70465pt\relax
+(fontspec)             \fontdimen 17\font =2.70465pt\relax \fontdimen 18\font
+(fontspec)             =2.7375pt\relax \fontdimen 19\font =2.19pt\relax
+(fontspec)             \fontdimen 22\font =2.7375pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;lang
+uage=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =7.41315pt\relax \fontdimen 9\font
+(fontspec)             =4.3143pt\relax \fontdimen 10\font =4.8618pt\relax
+(fontspec)             \fontdimen 11\font =7.5117pt\relax \fontdimen 12\font
+(fontspec)             =3.77776pt\relax \fontdimen 13\font =3.97485pt\relax
+(fontspec)             \fontdimen 14\font =3.97485pt\relax \fontdimen 15\font
+(fontspec)             =3.16455pt\relax \fontdimen 16\font =2.70465pt\relax
+(fontspec)             \fontdimen 17\font =2.70465pt\relax \fontdimen 18\font
+(fontspec)             =2.7375pt\relax \fontdimen 19\font =2.19pt\relax
+(fontspec)             \fontdimen 22\font =2.7375pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 385.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 385.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 385.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 385.
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
+=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,
+Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}
+},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.438pt\relax \fontdimen 9\font =2.19pt\relax
+(fontspec)             \fontdimen 10\font =1.82864pt\relax \fontdimen 11\font
+(fontspec)             =1.21545pt\relax \fontdimen 12\font =6.56999pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[0.9999]"[latinmodern-math.otf]/OT:script=mat
+h;language=dflt;"<6.57-9.3075>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=0;"<-6.57>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;
+language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.438pt\relax \fontdimen 9\font
+(fontspec)             =2.19pt\relax \fontdimen 10\font =1.82864pt\relax
+(fontspec)             \fontdimen 11\font =1.21545pt\relax \fontdimen 12\font
+(fontspec)             =6.56999pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;lang
+uage=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.438pt\relax \fontdimen 9\font
+(fontspec)             =2.19pt\relax \fontdimen 10\font =1.82864pt\relax
+(fontspec)             \fontdimen 11\font =1.21545pt\relax \fontdimen 12\font
+(fontspec)             =6.56999pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 3
+85.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 385.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 385
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 385.
+
+Package unicode-math Warning: Using \overbracket and \underbracket from
+(unicode-math)                `mathtools' package.
+(unicode-math)                 
+(unicode-math)                 Use \Uoverbracket and \Uunderbracket for
+(unicode-math)                original `unicode-math' definition.
+
+
+Package unicode-math Warning: I'm going to overwrite the following commands
+(unicode-math)                from the `mathtools' package: 
+(unicode-math)                 
+(unicode-math)                     \dblcolon, \coloneqq, \Coloneqq, \eqqcolon.
+(unicode-math)                
+(unicode-math)                 
+(unicode-math)                 Note that since I won't overwrite the other
+(unicode-math)                colon-like commands, using them will lead to
+(unicode-math)                inconsistencies.
+
+LaTeX Info: Redefining \microtypecontext on input line 385.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ntxtlf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package hyperref Info: Option `pageanchor' set `false' on input line 387.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(0.0pt, 614.295pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 794.96999pt, 0.0pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=614.295pt
+* \textheight=794.96999pt
+* \oddsidemargin=-72.26999pt
+* \evensidemargin=-72.26999pt
+* \topmargin=-145.3935pt
+* \headheight=61.74242pt
+* \headsep=11.38109pt
+* \topskip=11.0pt
+* \footskip=34.1433pt
+* \marginparwidth=53.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: figs/Spring.jpg Graphic file (type bmp)
+<figs/Spring.jpg>
+
+LaTeX Font Warning: Font shape `TU/ntxtlf/b/n' undefined
+(Font)              using `TU/ntxtlf/m/n' instead on input line 387.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `latinmodern-math.otf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 387.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.6658pt on input line 387.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.47559pt on input line 387.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 387.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 387.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 387.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 38
+7.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 387
+.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 387
+.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+LaTeX Font Warning: Font shape `TU/ntxtlf/m/it' undefined
+(Font)              using `TU/ntxtlf/m/n' instead on input line 387.
+
+[1
+
+
+
+
+] (./elegantbookdown-demo.toc)
+\tf@toc=\write9
+\openout9 = `elegantbookdown-demo.toc'.
+
+[1
+
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 400.
+File: figs/by-nc-sa.png Graphic file (type bmp)
+<figs/by-nc-sa.png>
+[1
+
+
+]
+Chapter 1.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[2
+
+]
+Chapter 2.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `FontAwesome' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `A' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `F' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `J' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `K' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `L' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `T' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `V' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `W' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `X' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `Y' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `k' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `r' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `v' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `w' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `x' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `y' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `1' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `4' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `7' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `.' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `,' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `:' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `;' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `!' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `?' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `@' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\%' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `+' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `(' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `)' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `-' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textendash ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textemdash ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textbackslash ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textbraceleft ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textbraceright ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textless ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textgreater ' is missing
+(microtype)             in font `\TU/FontAwesome(0)/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+LaTeX Font Warning: Font shape `TU/ntxtlf/b/it' undefined
+(Font)              using `TU/ntxtlf/b/n' instead on input line 456.
+
+[3
+
+]
+LaTeX Font Info:    Trying to load font information for U+ding on input line 54
+2.
+(c:/Users/Fei/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bbding/Uding.fd
+File: Uding.fd 1996/02/01 v1.0 BBding font definitions
+)
+Overfull \hbox (51.50134pt too wide) has occurred while \output is active
+[][]
+ []
+
+[4]
+Overfull \hbox (51.50134pt too wide) has occurred while \output is active
+[][]
+ []
+
+[5]
+
+LaTeX Warning: Reference `pythagThm' on page 6 undefined on input line 611.
+
+
+Overfull \hbox (51.50134pt too wide) has occurred while \output is active
+[][]
+ []
+
+[6]
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 405.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (51.50134pt too wide) has occurred while \output is active
+[][]
+ []
+
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 701.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 701.
+(./elegantbookdown-demo.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 701.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 701.
+Package rerunfilecheck Info: File `elegantbookdown-demo.out' has not changed.
+(rerunfilecheck)             Checksum: 8E79E2248A2AA9C2D8DF65E3BC074EF4;153.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 41744 strings out of 481384
+ 810788 string characters out of 5926453
+ 1528205 words of memory out of 5000000
+ 58359 multiletter control sequences out of 15000+600000
+ 540520 words of font info for 74 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 68i,14n,126p,858b,1272s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on elegantbookdown-demo.pdf (9 pages).

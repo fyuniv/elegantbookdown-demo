@@ -25,7 +25,7 @@
 
   \author{Fei Ye}
 
-  \date{2020-03-22}
+  \date{2020-04-20}
 
 % logo 图案
 % 封面图片
@@ -374,8 +374,8 @@ margin=1in
 % \makeatother
 
 %%%% Fix elagantbook chapter title issue.
-\titleformat{\chapter}[\style]{\bfseries}
-{\filcenter\LARGE\enspace\bfseries{\color{structurecolor}\IfAppendix{\appendixname}{\chaptername\,\,\thechapter}\enspace}}{1pt}{\bfseries\color{structurecolor}\LARGE\filcenter}[\ifdefstring{\ELEGANT@base}{hide}{}{\filcenter\base{structurecolor}{88}}]
+% \titleformat{\chapter}[\style]{\bfseries}
+% {\filcenter\LARGE\enspace\bfseries{\color{structurecolor}\IfAppendix{\appendixname}{\chaptername\,\,\thechapter}\enspace}}{1pt}{\bfseries\color{structurecolor}\LARGE\filcenter}[\ifdefstring{\ELEGANT@base}{hide}{}{\filcenter\base{structurecolor}{88}}]
 
 \frontmatter
 
@@ -514,16 +514,17 @@ Within the same level, the convention is to perform from the left to the right.
 
 \end{rmdnote}
 
-\BeginKnitrBlock{example}
-\protect\hypertarget{exm:unnamed-chunk-1}{}{\label{exm:unnamed-chunk-1} }
+\begin{example}
+
 Simplify. \textbf{Write with positive exponents.}
 \[
 \left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
 \]
-\EndKnitrBlock{example}
 
-\BeginKnitrBlock{solution}
-\iffalse{} {Solution. } \fi{}
+\end{example}
+
+\begin{solution}
+
 The idea is to simplify the base first and rewrite using positive exponents only.
 
 \[
@@ -535,7 +536,8 @@ The idea is to simplify the base first and rewrite using positive exponents only
 =&\dfrac{16y^{32}z^{20}}{x^{12}}.\\
 \end{aligned}
 \]
-\EndKnitrBlock{solution}
+
+\end{solution}
 
 \begin{rmdtip}
 
@@ -552,23 +554,18 @@ To avoid mistakes when working with negative exponents, it's better to apply the
 Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
 
 \BeginKnitrBlock{theorem}{Pythagorean Theorem}{}
-\protect\hypertarget{thm:unnamed-chunk-3}{}{\label{thm:unnamed-chunk-3} \iffalse (Pythagorean Theorem) \fi{} }
+\protect\hypertarget{thm:pythagThm}{}{\label{thm:pythagThm} \iffalse (Pythagorean Theorem) \fi{} }
 If \(c\) denotes the length of the hypotenuse and \(a\) and \(b\) denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 \[a^2+b^2=c^2.\]
 \EndKnitrBlock{theorem}
 
 \BeginKnitrBlock{corollary}{}{}
-\protect\hypertarget{cor:unnamed-chunk-4}{}{\label{cor:unnamed-chunk-4} }
+\protect\hypertarget{cor:unnamed-chunk-1}{}{\label{cor:unnamed-chunk-1} }
 For any angle \(\theta\), we have
 \[
 \sin^2\theta+\cos^2\theta=1
 \]
 \EndKnitrBlock{corollary}
-
-\BeginKnitrBlock{lemma}{}{}
-\protect\hypertarget{lem:unnamed-chunk-5}{}{\label{lem:unnamed-chunk-5} }
-For any angle \(\theta\), projecting the terminal side to the \(x\)-axis forms a right triangle.
-\EndKnitrBlock{lemma}
 
 \newpage
 
@@ -577,9 +574,8 @@ For any angle \(\theta\), projecting the terminal side to the \(x\)-axis forms a
 
 Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
 
-\begin{theorem}{Pythagorean Theorem}{}
+\begin{theorem}{Pythagorean Theorem}{pythagThm}
 
-\textbf{No Theorem Name Displayed}\\
 If \(c\) denotes the length of the hypotenuse and \(a\)
 and \(b\) denote the lengths of the other two sides,
 the Pythagorean theorem can be expressed as the Pythagorean equation:
@@ -596,7 +592,7 @@ For any angle \(\theta\), we have
 
 \end{corollary}
 
-\begin{lemma}{Pandoc Div Blocks}{}
+\begin{lemma}{}{}
 
 Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
 to end a Div block. Such a block can be converted
@@ -604,45 +600,28 @@ to LaTeX environment using lua.
 
 \end{lemma}
 
-The codes for the above three environments are in the following
+\begin{example}
 
-\begin{verbatim}
-::: {.theorem data-latex="Pythagorean Theorem"}
-**No Theorem Name Displayed**  
-If $c$ denotes the length of the hypotenuse and $a$ and $b$
- denote the lengths of the other two sides,
-  the Pythagorean theorem can be expressed as
-   the Pythagorean equation:
-$$a^2+b^2=c^2.$$
+Find the hypotenuose for the right triangle whose legs are 4 and 3.
 
-:::
+\end{example}
 
-::: {.corollary data-latex=""}
+\begin{solution}
 
-For any angle $\theta$, we have
-$$
-\sin^2\theta+\cos^2\theta=1
-$$
+By \ref{pythagThm}, the hypothenuose is
+\[
+\sqrt{3^2+4^2}=5.
+\]
 
-:::
-
-::: {.lemma data-latex="Pandoc Div Blocks"}
-
-Pandoc use `::: {#Id .Div_attributes}` to start
- and `:::` to end a Div block.
-  Such a block can be converted to LaTeX environment using lua.
-
-:::
-
-\end{verbatim}
+\end{solution}
 
 \newpage
 
 \hypertarget{practice}{%
 \section{Practice}\label{practice}}
 
-\BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }
+\begin{exercise}
+
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -655,10 +634,11 @@ Simplify. \textbf{Write with positive exponents.}
 \item
   \((-2)^{-3}\)
 \end{enumerate}
-\EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-7}{}{\label{exr:unnamed-chunk-7} }
+\end{exercise}
+
+\begin{exercise}
+
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -671,10 +651,11 @@ Simplify. \textbf{Write with positive exponents.}
 \item
   \(\dfrac{m^5 n^{2}}{(mn)^3}\)
 \end{enumerate}
-\EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-8}{}{\label{exr:unnamed-chunk-8} }
+\end{exercise}
+
+\begin{exercise}
+
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -687,10 +668,11 @@ Simplify. \textbf{Write with positive exponents.}
 \item
   \(\dfrac{3^{-2}a^{-3}b^5}{x^{-3}y^{-4}}\)
 \end{enumerate}
-\EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-9}{}{\label{exr:unnamed-chunk-9} }
+\end{exercise}
+
+\begin{exercise}
+
 Simplify. \textbf{Write with positive exponents.}
 
 \begin{enumerate}
@@ -703,12 +685,14 @@ Simplify. \textbf{Write with positive exponents.}
 \item
   \(\dfrac{(3 x^{2} y^{-1})^{-3}(2 x^{-3} y^{2})^{-1}}{(x^{6} y^{-5})^{-2}}\)
 \end{enumerate}
-\EndKnitrBlock{exercise}
 
-\BeginKnitrBlock{exercise}
-\protect\hypertarget{exr:unnamed-chunk-10}{}{\label{exr:unnamed-chunk-10} }
+\end{exercise}
+
+\begin{exercise}
+
 A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given \$4, will you buy a large watermelon or 4 smaller ones? Why?
-\EndKnitrBlock{exercise}
+
+\end{exercise}
 % 参考文献
 
 

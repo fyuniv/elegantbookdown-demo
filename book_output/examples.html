@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-03-22" />
+<meta name="date" content="2020-04-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -458,18 +458,14 @@ x^n=\underbrace{x\cdot x \cdots x}_{n~\text{factors of}~x}.
 <p><strong>Parenthesis</strong>; <strong>Exponentiation</strong>; <strong>Multiplication and Division</strong>; <strong>Addition and Subtraction</strong>.</p>
 <p>Within the same level, the convention is to perform from the left to the right.</p>
 </div>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-1" class="example"><strong>Example 2.1  </strong></span>
-Simplify. <strong>Write with positive exponents.</strong>
+<div class="exam">
+<p>Simplify. <strong>Write with positive exponents.</strong>
 <span class="math display">\[
 \left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
 \]</span></p>
 </div>
-
-<div class="solution">
-<p> <span class="solution"><em>Solution. </em></span> 
-The idea is to simplify the base first and rewrite using positive exponents only.</p>
+<div class="sol">
+<p>The idea is to simplify the base first and rewrite using positive exponents only.</p>
 <p><span class="math display">\[
 \begin{aligned}
     \left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}
@@ -491,124 +487,87 @@ To avoid mistakes when working with negative exponents, it’s better to apply t
 <p>Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.</p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-3" class="theorem"><strong>Theorem 2.1  (Pythagorean Theorem)  </strong></span>
+<p><span id="thm:pythagThm" class="theorem"><strong>Theorem 2.1  (Pythagorean Theorem)  </strong></span>
 If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 <span class="math display">\[a^2+b^2=c^2.\]</span></p>
 </div>
 
 <div class="corollary">
-<p><span id="cor:unnamed-chunk-4" class="corollary"><strong>Corollary 2.1  </strong></span>
+<p><span id="cor:unnamed-chunk-1" class="corollary"><strong>Corollary 2.1  </strong></span>
 For any angle <span class="math inline">\(\theta\)</span>, we have
 <span class="math display">\[
 \sin^2\theta+\cos^2\theta=1
 \]</span></p>
-</div>
-
-<div class="lemma">
-<p><span id="lem:unnamed-chunk-5" class="lemma"><strong>Lemma 2.1  </strong></span>
-For any angle <span class="math inline">\(\theta\)</span>, projecting the terminal side to the <span class="math inline">\(x\)</span>-axis forms a right triangle.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 <div id="generating-theorem-environments-using-pandoc-fence-code-blocks" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Generating Theorem Environments Using Pandoc Fence Code Blocks</h2>
 <p>Bookdown has a lua filter called “latex-div.lua” which handles theorem environments for latex.</p>
-<div class="theorem">
-<p><strong>No Theorem Name Displayed</strong><br />
-If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
+<div class="thm" name="Pythagorean Theorem" label="pythagThm">
+<p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
 and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
 the Pythagorean theorem can be expressed as the Pythagorean equation:
 <span class="math display">\[a^2+b^2=c^2.\]</span></p>
 </div>
-<div class="corollary">
+<div class="cor">
 <p>For any angle <span class="math inline">\(\theta\)</span>, we have
 <span class="math display">\[
 \sin^2\theta+\cos^2\theta=1
 \]</span></p>
 </div>
-<div class="lemma">
+<div class="lem">
 <p>Pandoc use <code>::: {#Id .Div_attributes}</code> to start and <code>:::</code>
 to end a Div block. Such a block can be converted
 to LaTeX environment using lua.</p>
 </div>
-<p>The codes for the above three environments are in the following</p>
-<pre class="rmarkdown"><code>
-::: {.theorem data-latex=&quot;Pythagorean Theorem&quot;}
-**No Theorem Name Displayed**  
-If $c$ denotes the length of the hypotenuse and $a$ and $b$
- denote the lengths of the other two sides,
-  the Pythagorean theorem can be expressed as
-   the Pythagorean equation:
-$$a^2+b^2=c^2.$$
-
-:::
-
-::: {.corollary data-latex=&quot;&quot;}
-
-For any angle $\theta$, we have
-$$
-\sin^2\theta+\cos^2\theta=1
-$$
-
-:::
-
-::: {.lemma data-latex=&quot;Pandoc Div Blocks&quot;}
-
-Pandoc use `::: {#Id .Div_attributes}` to start
- and `:::` to end a Div block.
-  Such a block can be converted to LaTeX environment using lua.
-
-:::
-
-</code></pre>
+<div class="exam">
+<p>Find the hypotenuose for the right triangle whose legs are 4 and 3.</p>
+</div>
+<div class="sol">
+<p>By <a href="#pythagThm"><strong>??</strong></a>, the hypothenuose is
+<span class="math display">\[
+\sqrt{3^2+4^2}=5.
+\]</span></p>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 <div id="practice" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Practice</h2>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-6" class="exercise"><strong>Problem 2.1  </strong></span>
-Simplify. <strong>Write with positive exponents.</strong></p>
+<div class="exer">
+<p>Simplify. <strong>Write with positive exponents.</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\((3a^2b^3c^2)(4abc^2)(2b^2c^3)\)</span></li>
 <li><span class="math inline">\(\dfrac{4y^3z^0}{x^2y^2}\)</span></li>
 <li><span class="math inline">\((-2)^{-3}\)</span></li>
 </ol>
 </div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-7" class="exercise"><strong>Problem 2.2  </strong></span>
-Simplify. <strong>Write with positive exponents.</strong></p>
+<div class="exer">
+<p>Simplify. <strong>Write with positive exponents.</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\dfrac{-u^0v^{15}}{v^{16}}\)</span></li>
 <li><span class="math inline">\((-2a^3b^2c^0)^3\)</span></li>
 <li><span class="math inline">\(\dfrac{m^5 n^{2}}{(mn)^3}\)</span></li>
 </ol>
 </div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-8" class="exercise"><strong>Problem 2.3  </strong></span>
-Simplify. <strong>Write with positive exponents.</strong></p>
+<div class="exer">
+<p>Simplify. <strong>Write with positive exponents.</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\((-3a^2x^3)^{-2}\)</span></li>
 <li><span class="math inline">\(\left(\dfrac{-x^0y^3}{2wz^2}\right)^3\)</span></li>
 <li><span class="math inline">\(\dfrac{3^{-2}a^{-3}b^5}{x^{-3}y^{-4}}\)</span></li>
 </ol>
 </div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-9" class="exercise"><strong>Problem 2.4  </strong></span>
-Simplify. <strong>Write with positive exponents.</strong></p>
+<div class="exer">
+<p>Simplify. <strong>Write with positive exponents.</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\left(-x^{-1}(-y)^2\right)^3\)</span></li>
 <li><span class="math inline">\(\left(\dfrac{6x^{-2}y^5}{2y^{-3}z^{-11}}\right)^{-3}\)</span></li>
 <li><span class="math inline">\(\dfrac{(3 x^{2} y^{-1})^{-3}(2 x^{-3} y^{2})^{-1}}{(x^{6} y^{-5})^{-2}}\)</span></li>
 </ol>
 </div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-10" class="exercise"><strong>Problem 2.5  </strong></span>
-A store has large size and small size watermelons. A large one cost $4 and a small one $1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given $4, will you buy a large watermelon or 4 smaller ones? Why?</p>
+<div class="exer">
+<p>A store has large size and small size watermelons. A large one cost $4 and a small one $1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given $4, will you buy a large watermelon or 4 smaller ones? Why?</p>
 </div>
 
 </div>
