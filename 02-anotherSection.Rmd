@@ -1,0 +1,84 @@
+# Another Chapter
+
+## Generating Theorem Environments Using Pandoc Fence Code Blocks
+
+Bookdown has a lua filter called "latex-div.lua" which handles theorem environments for latex.
+
+::: {.thm name="Pythagorean Theorem"}
+
+If $c$ denotes the length of the hypotenuse and $a$
+ and $b$ denote the lengths of the other two sides,
+ the Pythagorean theorem can be expressed as the Pythagorean equation:
+$$a^2+b^2=c^2.$$
+
+:::
+
+::: {.rmdtheorem}
+
+If $c$ denotes the length of the hypotenuse and $a$
+ and $b$ denote the lengths of the other two sides,
+ the Pythagorean theorem can be expressed as the Pythagorean equation:
+$$a^2+b^2=c^2.$$
+
+:::
+
+
+::: {.rmdthm}
+
+If $c$ denotes the length of the hypotenuse and $a$
+ and $b$ denote the lengths of the other two sides,
+ the Pythagorean theorem can be expressed as the Pythagorean equation:
+$$a^2+b^2=c^2.$$
+
+:::
+
+
+::: {.cor}
+
+For any angle $\theta$, we have
+$$
+\sin^2\theta+\cos^2\theta=1
+$$
+
+:::
+
+::: {.lem}
+
+Pandoc use `::: {#Id .Div_attributes}` to start and `:::`
+ to end a Div block. Such a block can be converted
+  to LaTeX environment using lua.
+
+:::
+
+
+::: {.rmdprop}
+
+Let $f$ be a function differentiable over $(a, b)$. If $f'(x)>0$ for any $x$ in $(a, b)$, then $f(a)<f(x)<f(b)$$ for any $x$ in $(a,b)$.
+
+:::
+
+
+::: {.exam}
+Find the hypotenuose for the right triangle whose legs are 4 and 3.
+:::
+
+:::{.sol}
+By \@ref(thm:pyThm), the hypothenuose is
+$$
+\sqrt{3^2+4^2}=5.
+$$
+:::
+
+\newpage
+
+## Practice
+
+:::{.exer}
+
+Simplify. **Write with positive exponents.**
+
+1. $(3a^2b^3c^2)(4abc^2)(2b^2c^3)$
+2. $\dfrac{4y^3z^0}{x^2y^2}$
+3. $(-2)^{-3}$
+
+:::

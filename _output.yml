@@ -4,7 +4,7 @@ bookdown::gitbook:
     before_body: html/math-shortcuts.html 
   split_by: chapter
   toc_depth: 1
-  css: css/style.css
+  css: [css/style.css, css/thm.css]
   config:
     toc:
       before: |

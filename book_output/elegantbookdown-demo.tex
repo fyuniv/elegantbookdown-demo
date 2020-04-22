@@ -25,7 +25,7 @@
 
   \author{Fei Ye}
 
-  \date{2020-04-20}
+  \date{2020-04-21}
 
 % logo 图案
 % 封面图片
@@ -455,53 +455,6 @@ x^n=\underbrace{x\cdot x \cdots x}_{n~\text{factors of}~x}.
 
 In the notation \(x^n\), \(n\) is called \textbf{\emph{the exponent}}, \(x\) is called \textbf{\emph{the base}}, and \(x^n\) is called \textbf{\emph{the power}}, read as ``\(x\) raised to the \(n\)-th power'', ``\(x\) to the \(n\)-th power'', ``\(x\) to the \(n\)-th'', ``\(x\) to the power of \(n\)'' or ``\(x\) to the \(n\)''.
 
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\begin{minipage}[b]{0.47\columnwidth}\raggedright
-Property\strut
-\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
-Example\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The product rule \[x^m\cdot x^n=x^{m+n}.\]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[2x^2\cdot (-3x^3)=-6x^5.\]\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The quotient rule (for \(x\neq 0\).) \[\dfrac{x^m}{x^n}= \begin{cases} x^{m-n}  & \text{if} m\ge n.\\[1em] \dfrac{1}{x^{n-m}} & \text{if} m\le n. \end{cases} \]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[\frac{15x^5}{5x^2}=3x^3;\] \[\frac{-3x^2}{6x^3}=-\frac{1}{2x}.\]\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The zero exponent rule (for \(x\neq 0\).) \[x^0=1.\]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[(-2)^0=1;\] \[-x^0=-1.\]\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The negative exponent rule (for \(x\neq 0\).) \[x^{-n}=\dfrac{1}{x^n} \quad\text{and}\quad \dfrac{1}{x^{-n}}=x^n.\]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[(-2)^{-3}=\frac{1}{(-2)^3}=-\frac18;\] \[\frac{x^{-2}}{x^{-3}}=\frac{x^3}{x^2}=x.\]\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The power to a power rule \[\left(x^a\right)^b=x^{ab}.\]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[\left(2^{2}\right)^3=2^6=64;\] \[\left(x^2\right)^3=x^6.\]\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The product raised to a power rule \[(xy)^n=x^ny^n.\]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[\left(-2x\right)^{2}=(-2)^2x^2=4x^2.\]\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
-The quotient raised to a power rule (for \(y\neq 0\).) \[\left(\dfrac{x}{y}\right)^n=\dfrac{x^n}{y^n}.\]\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-\[    \left(\dfrac{x}{-2}\right)^{3}=\dfrac{x^3}{(-2)^3}=-\dfrac{x^3}{8}.\]\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
 \begin{rmdnote}
 
 \textbf{Order of Basic Mathematical Operations}
@@ -554,7 +507,7 @@ To avoid mistakes when working with negative exponents, it's better to apply the
 Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
 
 \BeginKnitrBlock{theorem}{Pythagorean Theorem}{}
-\protect\hypertarget{thm:pythagThm}{}{\label{thm:pythagThm} \iffalse (Pythagorean Theorem) \fi{} }
+\protect\hypertarget{thm:ggThm}{}{\label{thm:ggThm} \iffalse (Pythagorean Theorem) \fi{} }
 If \(c\) denotes the length of the hypotenuse and \(a\) and \(b\) denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 \[a^2+b^2=c^2.\]
 \EndKnitrBlock{theorem}
@@ -574,7 +527,7 @@ For any angle \(\theta\), we have
 
 Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
 
-\begin{theorem}{Pythagorean Theorem}{pythagThm}
+\begin{theorem}{Pythagorean Theorem}{pyThm}
 
 If \(c\) denotes the length of the hypotenuse and \(a\)
 and \(b\) denote the lengths of the other two sides,
@@ -608,7 +561,7 @@ Find the hypotenuose for the right triangle whose legs are 4 and 3.
 
 \begin{solution}
 
-By \ref{pythagThm}, the hypothenuose is
+By \ref{thm:pyThm} or \ref{thm:ggThm}, the hypothenuose is
 \[
 \sqrt{3^2+4^2}=5.
 \]
@@ -691,6 +644,89 @@ Simplify. \textbf{Write with positive exponents.}
 \begin{exercise}
 
 A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given \$4, will you buy a large watermelon or 4 smaller ones? Why?
+
+\end{exercise}
+
+\hypertarget{another-chapter}{%
+\chapter{Another Chapter}\label{another-chapter}}
+
+\hypertarget{generating-theorem-environments-using-pandoc-fence-code-blocks-1}{%
+\section{Generating Theorem Environments Using Pandoc Fence Code Blocks}\label{generating-theorem-environments-using-pandoc-fence-code-blocks-1}}
+
+Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
+
+\begin{theorem}{Pythagorean Theorem}{}
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\end{theorem}
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\begin{corollary}{}{}
+
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+
+\end{corollary}
+
+\begin{lemma}{}{}
+
+Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
+to end a Div block. Such a block can be converted
+to LaTeX environment using lua.
+
+\end{lemma}
+
+Let \(f\) be a function differentiable over \((a, b)\). If \(f'(x)>0\) for any \(x\) in \((a, b)\), then \(f(a)<f(x)<f(b)\)\$ for any \(x\) in \((a,b)\).
+
+\begin{example}
+
+Find the hypotenuose for the right triangle whose legs are 4 and 3.
+
+\end{example}
+
+\begin{solution}
+
+By \ref{thm:pyThm}, the hypothenuose is
+\[
+\sqrt{3^2+4^2}=5.
+\]
+
+\end{solution}
+
+\newpage
+
+\hypertarget{practice-1}{%
+\section{Practice}\label{practice-1}}
+
+\begin{exercise}
+
+Simplify. \textbf{Write with positive exponents.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \((3a^2b^3c^2)(4abc^2)(2b^2c^3)\)
+\item
+  \(\dfrac{4y^3z^0}{x^2y^2}\)
+\item
+  \((-2)^{-3}\)
+\end{enumerate}
 
 \end{exercise}
 % 参考文献

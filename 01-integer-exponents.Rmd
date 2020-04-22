@@ -19,16 +19,6 @@ $$
 
 In the notation $x^n$, $n$ is called ***the exponent***, $x$ is called ***the base***, and $x^n$ is called ***the power***, read as "$x$ raised to the $n$-th power",  "$x$ to the $n$-th power", "$x$ to the $n$-th", "$x$ to the power of $n$" or "$x$ to the $n$".
 
-| Property | Example|
-|---|---|
-|The product rule $$x^m\cdot x^n=x^{m+n}.$$ | $$2x^2\cdot (-3x^3)=-6x^5.$$ |
-| The quotient rule (for $x\neq 0$.) $$\dfrac{x^m}{x^n}= \begin{cases} x^{m-n}  & \text{if} m\ge n.\\[1em] \dfrac{1}{x^{n-m}} & \text{if} m\le n. \end{cases} $$ | $$\frac{15x^5}{5x^2}=3x^3;$$ $$\frac{-3x^2}{6x^3}=-\frac{1}{2x}.$$ |
-| The zero exponent rule (for $x\neq 0$.) $$x^0=1.$$ | $$(-2)^0=1;$$ $$-x^0=-1.$$ |
-| The negative exponent rule (for $x\neq 0$.) $$x^{-n}=\dfrac{1}{x^n} \quad\text{and}\quad \dfrac{1}{x^{-n}}=x^n.$$ | $$(-2)^{-3}=\frac{1}{(-2)^3}=-\frac18;$$ $$\frac{x^{-2}}{x^{-3}}=\frac{x^3}{x^2}=x.$$ |
-| The power to a power rule $$\left(x^a\right)^b=x^{ab}.$$ | $$\left(2^{2}\right)^3=2^6=64;$$ $$\left(x^2\right)^3=x^6.$$ |
-| The product raised to a power rule $$(xy)^n=x^ny^n.$$ | $$\left(-2x\right)^{2}=(-2)^2x^2=4x^2.$$ |
-| The quotient raised to a power rule (for $y\neq 0$.) $$\left(\dfrac{x}{y}\right)^n=\dfrac{x^n}{y^n}.$$ | $$    \left(\dfrac{x}{-2}\right)^{3}=\dfrac{x^3}{(-2)^3}=-\dfrac{x^3}{8}.$$ |
-
 ::: {.rmdnote}
 
 **Order of Basic Mathematical Operations**  
@@ -79,7 +69,7 @@ To avoid mistakes when working with negative exponents, it's better to apply the
 
 Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
 
-```{theorem, name="Pythagorean Theorem", label="pythagThm"}
+```{theorem, name="Pythagorean Theorem", label="ggThm"}
 
 If $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 $$a^2+b^2=c^2.$$
@@ -101,7 +91,7 @@ $$
 
 Bookdown has a lua filter called "latex-div.lua" which handles theorem environments for latex.
 
-::: {.thm name="Pythagorean Theorem" label="pythagThm"}
+::: {.thm name="Pythagorean Theorem" label="pyThm"}
  
 If $c$ denotes the length of the hypotenuse and $a$
  and $b$ denote the lengths of the other two sides,
@@ -132,7 +122,7 @@ Find the hypotenuose for the right triangle whose legs are 4 and 3.
 :::
 
 :::{.sol}
-By \@ref(pythagThm), the hypothenuose is
+By \@ref(thm:pyThm) or \@ref(thm:ggThm), the hypothenuose is
 $$
 \sqrt{3^2+4^2}=5.
 $$

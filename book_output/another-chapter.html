@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Examples | A Demo of Elegantbook Bookdown</title>
+  <title>Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown</title>
   <meta name="description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Examples | A Demo of Elegantbook Bookdown" />
+  <meta property="og:title" content="Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="fyemath/elegantbookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Examples | A Demo of Elegantbook Bookdown" />
+  <meta name="twitter:title" content="Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown" />
   
   <meta name="twitter:description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="some-explanations.html"/>
-<link rel="next" href="another-chapter.html"/>
+<link rel="prev" href="examples.html"/>
+
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -400,77 +400,24 @@ $$\newcommand{\ii}{\mathbf{i}}$$
 $$\newcommand{\parll}{ {\mathbin{\parallel}} }$$
 $$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
 </div>
-<div id="examples" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Examples</h1>
-<div id="dont-be-tricked" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Don’t Be Tricked</h2>
-<div class="rmdthink">
-<ol style="list-style-type: decimal">
-<li><p>A pizza shop sales 12-inches pizza and 8-inches pizza at the price $12/each and $6/each respectively. With $12, would you like to order one 12-inches and two 8-inches. Why?</p></li>
-<li><p>A sheet of everyday copy paper is about 0.01 millimeter thick. Repeat folding along a different side 20 times. Now, how thick do you think the folded paper is?</p></li>
-</ol>
-</div>
-</div>
-<div id="properties-of-exponents" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Properties of Exponents</h2>
-<p>For an integer <span class="math inline">\(n\)</span>, and an expression <span class="math inline">\(x\)</span>, the mathematical operation of the <span class="math inline">\(n\)</span>-times repeated multiplication of <span class="math inline">\(x\)</span> is call exponentiation, written as <span class="math inline">\(x^n\)</span>, that is,
-<span class="math display">\[
-x^n=\underbrace{x\cdot x \cdots x}_{n~\text{factors of}~x}.
-\]</span></p>
-<p>In the notation <span class="math inline">\(x^n\)</span>, <span class="math inline">\(n\)</span> is called <strong><em>the exponent</em></strong>, <span class="math inline">\(x\)</span> is called <strong><em>the base</em></strong>, and <span class="math inline">\(x^n\)</span> is called <strong><em>the power</em></strong>, read as “<span class="math inline">\(x\)</span> raised to the <span class="math inline">\(n\)</span>-th power”, “<span class="math inline">\(x\)</span> to the <span class="math inline">\(n\)</span>-th power”, “<span class="math inline">\(x\)</span> to the <span class="math inline">\(n\)</span>-th”, “<span class="math inline">\(x\)</span> to the power of <span class="math inline">\(n\)</span>” or “<span class="math inline">\(x\)</span> to the <span class="math inline">\(n\)</span>”.</p>
-<div class="rmdnote">
-<p><strong>Order of Basic Mathematical Operations</strong></p>
-<p>In mathematics, the order of operations reflects conventions about which procedure should be performed first. There are four levels (from the highest to the lowest):</p>
-<p><strong>Parenthesis</strong>; <strong>Exponentiation</strong>; <strong>Multiplication and Division</strong>; <strong>Addition and Subtraction</strong>.</p>
-<p>Within the same level, the convention is to perform from the left to the right.</p>
-</div>
-<div class="exam">
-<p>Simplify. <strong>Write with positive exponents.</strong>
-<span class="math display">\[
-\left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
-\]</span></p>
-</div>
-<div class="sol">
-<p>The idea is to simplify the base first and rewrite using positive exponents only.</p>
-<p><span class="math display">\[
-\begin{aligned}
-    \left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}
-=&amp;\left(\dfrac{x^3}{2z^{5}y^8}\right)^{-4}\\
-=&amp;\left(\dfrac{2z^{5}y^8}{x^3}\right)^4\\
-=&amp;\dfrac{2^4(z^{5})^4(y^8)^4}{(x^3)^4}\\
-=&amp;\dfrac{16y^{32}z^{20}}{x^{12}}.\\
-\end{aligned}
-\]</span></p>
-</div>
-<div class="rmdtip">
-<p><strong>Simplify (at least partially) the problem first</strong><br />
-To avoid mistakes when working with negative exponents, it’s better to apply the negative exponent rule to change negative exponents to positive exponents and simplify the base first.</p>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div id="generating-theorem-environments-using-r-bookdown-code-chunks" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Generating Theorem Environments Using R Bookdown Code Chunks</h2>
-<p>Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.</p>
-
-<div class="theorem">
-<p><span id="thm:ggThm" class="theorem"><strong>Theorem 2.1  (Pythagorean Theorem)  </strong></span>
-If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
+<div id="another-chapter" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Another Chapter</h1>
+<div id="generating-theorem-environments-using-pandoc-fence-code-blocks-1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Generating Theorem Environments Using Pandoc Fence Code Blocks</h2>
+<p>Bookdown has a lua filter called “latex-div.lua” which handles theorem environments for latex.</p>
+<div class="thm" name="Pythagorean Theorem">
+<p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
+and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
 <span class="math display">\[a^2+b^2=c^2.\]</span></p>
 </div>
-
-<div class="corollary">
-<p><span id="cor:unnamed-chunk-1" class="corollary"><strong>Corollary 2.1  </strong></span>
-For any angle <span class="math inline">\(\theta\)</span>, we have
-<span class="math display">\[
-\sin^2\theta+\cos^2\theta=1
-\]</span></p>
+<div class="rmdtheorem">
+<p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
+and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+<span class="math display">\[a^2+b^2=c^2.\]</span></p>
 </div>
-<div style="page-break-after: always;"></div>
-</div>
-<div id="generating-theorem-environments-using-pandoc-fence-code-blocks" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Generating Theorem Environments Using Pandoc Fence Code Blocks</h2>
-<p>Bookdown has a lua filter called “latex-div.lua” which handles theorem environments for latex.</p>
-<div class="thm" name="Pythagorean Theorem" label="pyThm">
+<div class="rmdthm">
 <p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
 and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
 the Pythagorean theorem can be expressed as the Pythagorean equation:
@@ -487,19 +434,22 @@ the Pythagorean theorem can be expressed as the Pythagorean equation:
 to end a Div block. Such a block can be converted
 to LaTeX environment using lua.</p>
 </div>
+<div class="rmdprop">
+<p>Let <span class="math inline">\(f\)</span> be a function differentiable over <span class="math inline">\((a, b)\)</span>. If <span class="math inline">\(f&#39;(x)&gt;0\)</span> for any <span class="math inline">\(x\)</span> in <span class="math inline">\((a, b)\)</span>, then <span class="math inline">\(f(a)&lt;f(x)&lt;f(b)\)</span>$ for any <span class="math inline">\(x\)</span> in <span class="math inline">\((a,b)\)</span>.</p>
+</div>
 <div class="exam">
 <p>Find the hypotenuose for the right triangle whose legs are 4 and 3.</p>
 </div>
 <div class="sol">
-<p>By <a href="#thm:pyThm"><strong>??</strong></a> or <a href="examples.html#thm:ggThm">2.1</a>, the hypothenuose is
+<p>By <a href="#thm:pyThm"><strong>??</strong></a>, the hypothenuose is
 <span class="math display">\[
 \sqrt{3^2+4^2}=5.
 \]</span></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
-<div id="practice" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Practice</h2>
+<div id="practice-1" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Practice</h2>
 <div class="exer">
 <p>Simplify. <strong>Write with positive exponents.</strong></p>
 <ol style="list-style-type: decimal">
@@ -507,33 +457,6 @@ to LaTeX environment using lua.</p>
 <li><span class="math inline">\(\dfrac{4y^3z^0}{x^2y^2}\)</span></li>
 <li><span class="math inline">\((-2)^{-3}\)</span></li>
 </ol>
-</div>
-<div class="exer">
-<p>Simplify. <strong>Write with positive exponents.</strong></p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(\dfrac{-u^0v^{15}}{v^{16}}\)</span></li>
-<li><span class="math inline">\((-2a^3b^2c^0)^3\)</span></li>
-<li><span class="math inline">\(\dfrac{m^5 n^{2}}{(mn)^3}\)</span></li>
-</ol>
-</div>
-<div class="exer">
-<p>Simplify. <strong>Write with positive exponents.</strong></p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\((-3a^2x^3)^{-2}\)</span></li>
-<li><span class="math inline">\(\left(\dfrac{-x^0y^3}{2wz^2}\right)^3\)</span></li>
-<li><span class="math inline">\(\dfrac{3^{-2}a^{-3}b^5}{x^{-3}y^{-4}}\)</span></li>
-</ol>
-</div>
-<div class="exer">
-<p>Simplify. <strong>Write with positive exponents.</strong></p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(\left(-x^{-1}(-y)^2\right)^3\)</span></li>
-<li><span class="math inline">\(\left(\dfrac{6x^{-2}y^5}{2y^{-3}z^{-11}}\right)^{-3}\)</span></li>
-<li><span class="math inline">\(\dfrac{(3 x^{2} y^{-1})^{-3}(2 x^{-3} y^{2})^{-1}}{(x^{6} y^{-5})^{-2}}\)</span></li>
-</ol>
-</div>
-<div class="exer">
-<p>A store has large size and small size watermelons. A large one cost $4 and a small one $1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given $4, will you buy a large watermelon or 4 smaller ones? Why?</p>
 </div>
 
 </div>
@@ -543,8 +466,8 @@ to LaTeX environment using lua.</p>
           </div>
         </div>
       </div>
-<a href="some-explanations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="another-chapter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="examples.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -566,7 +489,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/fyemath/elegantbookdown-demo/blob/master/01-integer-exponents.Rmd",
+"link": "https://github.com/fyemath/elegantbookdown-demo/blob/master/02-anotherSection.Rmd",
 "text": "Edit"
 },
 "history": {

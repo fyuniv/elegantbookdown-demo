@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-04-20" />
+<meta name="date" content="2020-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -339,11 +339,18 @@ $(document).ready(function () {
 });
 </script>
 
-
+<script>
+    $(document).ready(function () {
+    const chap =  document.querySelector('.section.level1')
+    var chapnum = parseInt(chap.getAttribute('number'));
+    document.querySelector('body').style.setProperty("--chapnum", chapnum);
+    });
+</script>
 
 
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\thm.css" type="text/css" />
 </head>
 
 <body>
@@ -362,6 +369,7 @@ $(document).ready(function () {
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="1" data-path="some-explanations.html"><a href="some-explanations.html"><i class="fa fa-check"></i><b>1</b> Some Explanations</a></li>
 <li class="chapter" data-level="2" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>2</b> Examples</a></li>
+<li class="chapter" data-level="3" data-path="another-chapter.html"><a href="another-chapter.html"><i class="fa fa-check"></i><b>3</b> Another Chapter</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -395,7 +403,7 @@ $$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
 <div id="header">
 <h1 class="title">A Demo of Elegantbook Bookdown</h1>
 <p class="author"><em>Fei Ye</em></p>
-<p class="date"><em>2020-04-20</em></p>
+<p class="date"><em>2020-04-21</em></p>
 </div>
 <div id="introduction" class="section level1 unnumbered" number="">
 <h1>Introduction</h1>

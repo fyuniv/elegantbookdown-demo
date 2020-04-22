@@ -3,6 +3,7 @@ rmd_files: [
   "index.Rmd",
   "00-Some-Explanations.Rmd",
   "01-integer-exponents.Rmd",
+  "02-anotherSection.Rmd"
 ]
 
 output_dir: book_output

@@ -7,3 +7,6 @@
 \contentsline {section}{\numberline {2.3}Generating Theorem Environments Using R Bookdown Code Chunks}{5}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Generating Theorem Environments Using Pandoc Fence Code Blocks}{6}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Practice}{7}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Another Chapter}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Generating Theorem Environments Using Pandoc Fence Code Blocks}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Practice}{9}{section.3.2}%

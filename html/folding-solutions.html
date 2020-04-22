@@ -286,4 +286,10 @@ $(document).ready(function () {
 });
 </script>
 
-
+<script>
+    $(document).ready(function () {
+    const chap =  document.querySelector('.section.level1')
+    var chapnum = parseInt(chap.getAttribute('number'));
+    document.querySelector('body').style.setProperty("--chapnum", chapnum);
+    });
+</script>
