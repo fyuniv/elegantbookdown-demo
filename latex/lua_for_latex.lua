@@ -13,6 +13,34 @@ function Span(el)
     end
 end
 
+-- function Div(el)
+    -- local chapnum=0
+    -- local thmnum=0
+    -- local thmname=""
+    -- local thmlabel=""
+    -- local thmid=""
+    -- local text=""
+    -- if el.attributes.name then
+    --     thmname=el.attributes.name
+    -- end
+    -- if el.attributes.label then
+    --     thmlabel=el.attributes.label
+    -- end
+    -- if el.classes:includes("section" and "level1") then
+    --     chapnum = chapnum + 1
+    -- end
+--     if el.classes:includes("thm" or "rmdthm" or "rmdtheorem") then
+--         -- thmnum = thmnum + 1
+--         -- thmid=table.concat{"thm:",thmlable}
+--         -- text = table.concat({"Theorem ",chapnum,".",thmnum, thmname})
+--         return {
+--             -- pandoc.Span(pandoc.Strong(text), {id=thmid}),
+--             pandoc.Span("Theorem A"),
+--             el
+--         }
+--     end
+-- end
+
 function Div(el)
     local thmname=""
     local thmlabel=""

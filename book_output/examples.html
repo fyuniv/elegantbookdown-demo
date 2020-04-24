@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-04-21" />
+<meta name="date" content="2020-04-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -341,9 +341,49 @@ $(document).ready(function () {
 
 <script>
     $(document).ready(function () {
-    const chap =  document.querySelector('.section.level1')
-    var chapnum = parseInt(chap.getAttribute('number'));
-    document.querySelector('body').style.setProperty("--chapnum", chapnum);
+        var chapnum = parseInt($('.section.level1').attr('number'));
+        document.querySelector('body').style.setProperty("--chapnum", chapnum);
+        $('.rmdcor').each(function(index,value) {
+            thmnum=index+1;
+            $(this).attr('number', chapnum+'.'+thmnum);
+            thmid=(this).getAttribute('label');
+            thmtitle=(this).getAttribute('name');
+            if (thmtitle==null) {
+                thmtitle='';
+            };
+            if (thmid==null) {
+                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+            }
+            else {
+                $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+            }
+        });
+        $('.thm').each(function(index,value) {
+            thmnum=index+1;
+            $(this).attr('number', chapnum+'.'+thmnum);
+            thmid=(this).getAttribute('label');
+            thmtitle=(this).getAttribute('name');
+            if (thmtitle==null) {
+                thmtitle='';
+            };
+            if (thmid==null) {
+                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+            }
+            else {
+                $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('a').has('strong').each(function() {
+                var thmlabel = $(this).attr('href').split(':')[1];
+                var thmelm = $("div[label='"+thmlabel+"']");
+                var thmnumber=thmelm.attr('number');
+                $(this).text(thmnumber);
+        });
     });
 </script>
 
@@ -496,6 +536,7 @@ to LaTeX environment using lua.</p>
 \sqrt{3^2+4^2}=5.
 \]</span></p>
 </div>
+<p><a href="http://passyworldofmathematics.com/exponents-in-the-real-world/">Exponential functions</a></p>
 <div style="page-break-after: always;"></div>
 </div>
 <div id="practice" class="section level2" number="2.5">

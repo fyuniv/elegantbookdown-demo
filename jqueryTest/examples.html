@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown</title>
+  <title>Chapter 2 Examples | A Demo of Elegantbook Bookdown</title>
   <meta name="description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown" />
+  <meta property="og:title" content="Chapter 2 Examples | A Demo of Elegantbook Bookdown" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="fyemath/elegantbookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown" />
+  <meta name="twitter:title" content="Chapter 2 Examples | A Demo of Elegantbook Bookdown" />
   
   <meta name="twitter:description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
   
@@ -24,15 +24,15 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-04-24" />
+<meta name="date" content="2020-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="examples.html"/>
-
+<link rel="prev" href="some-explanations.html"/>
+<link rel="next" href="another-chapter.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -341,53 +341,23 @@ $(document).ready(function () {
 
 <script>
     $(document).ready(function () {
-        var chapnum = parseInt($('.section.level1').attr('number'));
-        document.querySelector('body').style.setProperty("--chapnum", chapnum);
-        $('.rmdcor').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
-        $('.thm').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
+    const chap =  document.querySelector('.section.level1')
+    var chapnum = parseInt(chap.getAttribute('number'));
+    document.querySelector('body').style.setProperty("--chapnum", chapnum);
     });
 </script>
 
 <script>
     $(document).ready(function () {
-        $('a').has('strong').each(function() {
-                var thmlabel = $(this).attr('href').split(':')[1];
-                var thmelm = $("div[label='"+thmlabel+"']");
-                var thmnumber=thmelm.attr('number');
-                $(this).text(thmnumber);
-        });
+        $('a').each(function() {
+            if ($(this).find( "span" ).text()=="??"){
+                var thmref = $(this).attr('href').split(':')[2];
+                var thmel = document.querySelector('.thm')
+                var thmrefname=window.getComputedStyle(thmel,'::before').content;
+                $(this).text("Theorem 2.1");}
+            });
     });
 </script>
-
-
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
 <link rel="stylesheet" href="css\thm.css" type="text/css" />
@@ -440,24 +410,28 @@ $$\newcommand{\ii}{\mathbf{i}}$$
 $$\newcommand{\parll}{ {\mathbin{\parallel}} }$$
 $$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
 </div>
-<div id="another-chapter" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Another Chapter</h1>
-<div id="generating-theorem-environments-using-pandoc-fence-code-blocks-1" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Generating Theorem Environments Using Pandoc Fence Code Blocks</h2>
+<div id="examples" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Examples</h1>
+
+<div id="properties-of-exponents" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Properties of Exponents</h2>
+
+<div class="exam">
+<p>Simplify. <strong>Write with positive exponents.</strong>
+<span class="math display">\[
+\left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
+\]</span></p>
+</div>
+
+<div class="theorem">
+<p><span id="thm:ggThm" class="theorem"><strong>Theorem 2.1  (Pythagorean Theorem)  </strong></span>
+If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
+<span class="math display">\[a^2+b^2=c^2.\]</span></p>
+</div>
+
 <p>Bookdown has a lua filter called “latex-div.lua” which handles theorem environments for latex.</p>
-<div class="thm" name="Pythagorean Theorem">
-<p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
-and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
-the Pythagorean theorem can be expressed as the Pythagorean equation:
-<span class="math display">\[a^2+b^2=c^2.\]</span></p>
-</div>
-<div class="rmdtheorem">
-<p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
-and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
-the Pythagorean theorem can be expressed as the Pythagorean equation:
-<span class="math display">\[a^2+b^2=c^2.\]</span></p>
-</div>
-<div class="rmdthm">
+
+<div class="thm" name="Pythagorean Theorem" label="pyThm">
 <p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
 and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
 the Pythagorean theorem can be expressed as the Pythagorean equation:
@@ -469,48 +443,36 @@ the Pythagorean theorem can be expressed as the Pythagorean equation:
 \sin^2\theta+\cos^2\theta=1
 \]</span></p>
 </div>
-<div class="rmdcor" name="Corolloary A">
-<p>For any angle <span class="math inline">\(\theta\)</span>, we have
-<span class="math display">\[
-\sin^2\theta+\cos^2\theta=1
-\]</span></p>
-</div>
-<div class="rmdcor" label="corB">
-<p>For any angle <span class="math inline">\(\theta\)</span>, we have
-<span class="math display">\[
-\sin^2\theta+\cos^2\theta=1
-\]</span></p>
-</div>
-<p>By <a href="#cor:corB"><strong>??</strong></a>, we know that …. <a href="#thm:pyThm"><strong>??</strong></a></p>
+
+<div class="rmdthm">
+    <p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
+    and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
+    the Pythagorean theorem can be expressed as the Pythagorean equation:
+    <span class="math display">\[a^2+b^2=c^2.\]</span></p>
+    </div>
+    <div class="cor">
+    <p>For any angle <span class="math inline">\(\theta\)</span>, we have
+    <span class="math display">\[
+    \sin^2\theta+\cos^2\theta=1
+    \]</span></p>
+    </div>
+
 <div class="lem">
 <p>Pandoc use <code>::: {#Id .Div_attributes}</code> to start and <code>:::</code>
 to end a Div block. Such a block can be converted
 to LaTeX environment using lua.</p>
 </div>
-<div class="rmdprop">
-<p>Let <span class="math inline">\(f\)</span> be a function differentiable over <span class="math inline">\((a, b)\)</span>. If <span class="math inline">\(f&#39;(x)&gt;0\)</span> for any <span class="math inline">\(x\)</span> in <span class="math inline">\((a, b)\)</span>, then <span class="math inline">\(f(a)&lt;f(x)&lt;f(b)\)</span>$ for any <span class="math inline">\(x\)</span> in <span class="math inline">\((a,b)\)</span>.</p>
-</div>
 <div class="exam">
 <p>Find the hypotenuose for the right triangle whose legs are 4 and 3.</p>
 </div>
 <div class="sol">
-<p>By <a href="#thm:pyThm"><strong>??</strong></a>, the hypothenuose is
+<p>By <a href="#thm:pyThm"><strong>??</strong></a> or <a href="examples.html#thm:ggThm">2.1</a>, the hypothenuose is
 <span class="math display">\[
 \sqrt{3^2+4^2}=5.
 \]</span></p>
 </div>
-<div style="page-break-after: always;"></div>
-</div>
-<div id="practice-1" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Practice</h2>
-<div class="exer">
-<p>Simplify. <strong>Write with positive exponents.</strong></p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\((3a^2b^3c^2)(4abc^2)(2b^2c^3)\)</span></li>
-<li><span class="math inline">\(\dfrac{4y^3z^0}{x^2y^2}\)</span></li>
-<li><span class="math inline">\((-2)^{-3}\)</span></li>
-</ol>
-</div>
+<p><a href="http://passyworldofmathematics.com/exponents-in-the-real-world/">Exponential functions</a></p>
+
 
 </div>
 </div>
@@ -519,8 +481,8 @@ to LaTeX environment using lua.</p>
           </div>
         </div>
       </div>
-<a href="examples.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="some-explanations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="another-chapter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -542,7 +504,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/fyemath/elegantbookdown-demo/blob/master/02-anotherSection.Rmd",
+"link": "https://github.com/fyemath/elegantbookdown-demo/blob/master/01-integer-exponents.Rmd",
 "text": "Edit"
 },
 "history": {

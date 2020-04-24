@@ -169,7 +169,7 @@ body {
     counter-increment: thmnum;
 }
 .thm::before, .rmdthm::before, .rmdtheorem::before {
-    content: var(--thm) counter(chapter)"."counter(thmnum) " " attr(name);
+    content: var(--thm) counter(chapter)"."counter(thmnum) " " attr(name); 
 }
 
 .lem, .rmdlem, .rmdlemma {

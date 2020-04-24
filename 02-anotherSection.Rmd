@@ -42,6 +42,27 @@ $$
 
 :::
 
+::: {.rmdcor name="Corolloary A"}
+
+For any angle $\theta$, we have
+$$
+\sin^2\theta+\cos^2\theta=1
+$$
+
+:::
+
+::: {.rmdcor label="corB"}
+
+For any angle $\theta$, we have
+$$
+\sin^2\theta+\cos^2\theta=1
+$$
+
+:::
+
+By \@ref(cor:corB), we know that .... \@ref(thm:pyThm)
+
+
 ::: {.lem}
 
 Pandoc use `::: {#Id .Div_attributes}` to start and `:::`

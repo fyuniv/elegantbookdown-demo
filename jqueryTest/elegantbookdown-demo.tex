@@ -1,0 +1,737 @@
+\documentclass[en,11pt]{elegantbook}
+
+
+\hypersetup{
+  pdfcreator={LaTeX via pandoc}
+}
+
+
+\usepackage{longtable,booktabs}
+
+
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setcounter{secnumdepth}{5}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+  \title{A Demo of Elegantbook Bookdown}
+
+
+  \author{Fei Ye}
+
+  \date{2020-04-21}
+
+% logo 图案
+% 封面图片
+  \cover{figs/Spring.jpg}
+% 版本号
+  \version{0.90}
+% 机构名
+% 引用格言
+% 导言区 preamble
+\usepackage{framed,color}
+
+\definecolor{shadecolor}{RGB}{248,248,248} %%% for shaded environments
+
+\usepackage{subfig}
+
+\usepackage{geometry}
+
+\geometry{
+letterpaper,
+margin=1in
+}
+
+%%%%%%%%%%%%%%%%%%% Packages for Math %%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{mathtools}
+% \usepackage{breqn}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{greenbean}{RGB}{144,237,204}
+\def\gray{\color{gray}}
+\def\black{\color{black}}
+\def\blue{\color{blue}}
+\def\red{\color{red}}
+\def\green{\color{green}}
+\def\yellow{\color{yellow}}
+\def\cyan{\color{cyan}}
+\def\brown{\color{brown}}
+\def\purple{\color{purple}}
+\def\olive{\color{olive}}
+\def\lime{\color{lime}}
+\def\darkgray{\color{darkgray}}
+
+%%%%%%%%%%%%%%%% Include Graphs %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\textfloatsep=0pt
+\dblfloatsep=0pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%% Spacing for Baseline and Parskip  %%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.1}
+\parindent=0pt
+% \parskip=0.2\baselineskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% Packages for Fine Tune Content %%%%%%%%%%%
+\usepackage[english]{babel}
+% \usepackage{indentfirst}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%% Enumerate Style %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[inline]{enumitem}
+\setenumerate{
+    label=\textup{(\arabic*)},
+    afterlabel={\,\,\,},
+    %%vertical
+    topsep=0pt,
+    partopsep=2pt,
+% 	itemsep=5pt,
+% 	parsep=2pt,
+% 	labelindent=0em,
+    itemindent = *,
+    wide,
+    itemjoin={\hfill},
+    after={\hfill\null}
+	%%Horizontal
+}
+% \setitemize{
+% 	%%vertical
+% 	topsep=0pt,
+% 	partopsep=0pt,
+% 	itemsep=0pt,
+% 	parsep=0pt,
+% 	%%Horizontal
+% 	labelindent=0em,
+% 	% leftmargin =!,
+% 	itemindent = 0pt,
+% 	labelsep= 2pt,
+% 	% labelwidth=1em,
+% }
+% \setlist{topsep=0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%% include files/Figure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[verbose]{wrapfig}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%% Cancel common factors in Math %%%%%%%%%%%%%%%%%%%%
+\usepackage[makeroom]{cancel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+%%%%%%%%%%%%%% Math mode without vertical spacing %%%%%%%%%%%%%%%%%
+\makeatletter
+\g@addto@macro\normalsize{%
+	\setlength\abovedisplayskip{1pt plus 2pt minus 2pt}%
+	\setlength\belowdisplayskip{1pt plus 2pt minus 2pt}%
+	\setlength\abovedisplayshortskip{1pt plus 2pt minus 2pt}%
+	\setlength\belowdisplayshortskip{1pt plus 2pt minus 2pt}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% Customized Commands %%%%%%%%%%
+\newcommand{\ZZ}{\mathbf{Z}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\abs}[1]{\lvert #1\rvert}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\parll}{ {\mathbin{\parallel}} }
+\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}
+
+\makeatletter
+\newcommand*\rel@kern[1]{\kern#1\dimexpr\macc@kerna}
+\newcommand*\widebar[1]{%
+\begingroup
+\def\mathaccent##1##2{%
+\rel@kern{0.8}%
+\overline{\rel@kern{-0.8}\macc@nucleus\rel@kern{0.2}}%
+\rel@kern{-0.2}%
+}%
+\macc@depth\@ne
+\let\math@bgroup\@empty \let\math@egroup\macc@set@skewchar
+\mathsurround\z@ \frozen@everymath{\mathgroup\macc@group\relax}%
+\macc@set@skewchar\relax
+\let\mathaccentV\macc@nested@a
+\macc@nested@a\relax111{#1}%
+\endgroup
+}
+\renewcommand{\bar}{\widebar}
+
+
+\usepackage{fontawesome,manfnt,bbding}
+\usepackage{textcomp}
+
+\newcommand{\size}[2]{{\fontsize{#1}{0}\selectfont#2}}
+
+\definecolor{main}{RGB}{59,180,5}%
+\definecolor{second}{RGB}{175,153,8}%
+\definecolor{third}{RGB}{244,105,102}%
+
+
+
+\renewenvironment{example}[1][]{
+  \refstepcounter{exam}
+  \par\noindent\textbf{\color{main}{\examplename} \theexam #1}
+  \rmfamily
+}{
+  \par\ignorespacesafterend
+}
+
+\renewenvironment{exercise}[1][]{
+    \refstepcounter{exer}
+    \par\noindent
+    \makebox[-3pt][r]{\color{red!90}\size{12}{\HandPencilLeft}}
+	\textbf{\color{main}{\exercisename} \theexer #1}
+    \rmfamily
+}{\par\ignorespacesafterend}
+
+\usepackage{tcolorbox}
+
+\tcbset{
+	noparskip/.style={before={\pagebreak[0]\parskip=0pt\parindent=0pt}},
+	before skip=-\baselineskip,
+    box align=top,
+    enhanced,
+    breakable,
+    left=0pt,
+    right=0pt,
+    top=2pt,
+    bottom=2pt,
+    opacityframe=0,
+    opacitybacktitle=0.5,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+}
+
+\ifdefstring{\ELEGANT@lang}{cn}{
+\newcommand{\rmdnotename}{注意}
+\newcommand{\tipname}{提示}
+\newcommand{\warnname}{警告}
+\newcommand{\thinkname}{思考}
+}{\relax}
+
+\ifdefstring{\ELEGANT@lang}{en}{
+  \setlength\parindent{2em}
+  \newcommand{\rmdnotename}{Note}
+  \newcommand{\tipname}{Tips}
+  \newcommand{\warnname}{Warning}
+  \newcommand{\thinkname}{Think}
+}{\relax}
+
+\newenvironment{rmdnote}{
+	\vspace*{0.5\baselineskip}
+    \par\noindent
+    \makebox[-3pt][r]{\color{red!90}\size{8}{\textdbend}\,\,}
+    \begin{tcolorbox}[
+    title={\textbf{\color{second}\rmdnotename}},
+    title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
+    colback=red!10!white,
+    ]
+    \itshape
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+
+\newenvironment{rmdtip}{
+	\vspace*{0.5\baselineskip}
+	\par\noindent
+	\makebox[-3pt][r]{\color{red!90}\size{12}{\HandRight}\,\,}
+    \begin{tcolorbox}[
+    enhanced,
+    title={\textbf{\color{second}\tipname}},
+    title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
+    colback=cyan!10!white,
+    ]
+    \sffamily
+}{
+    \end{tcolorbox}
+    \par\ignorespacesafterend
+}
+
+\newenvironment{rmdthink}{
+	\vspace*{0.5\baselineskip}
+	\par\noindent
+	\makebox[-4pt][r]{\color{green!90}\size{12}{\faLightbulbO}\,\,}
+    \begin{tcolorbox}[
+    enhanced,
+    title={\textbf{\color{second}\thinkname}},
+    title style={left color=blue!10!green!20!white,right color=yellow!20!blue!20!white},
+    colback=green!20!white,
+    ]
+    \sffamily
+}{
+    \end{tcolorbox}
+	\par\ignorespacesafterend
+}
+
+
+\newenvironment{rmdsol}{
+    \par\noindent
+    \textbf{\color{main}Solution} \itshape
+}{\par}
+\newenvironment{rmdrmk}{
+    \noindent\textbf{\color{second}Remark}
+}{\par}
+
+\usepackage{multicol}
+
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+\fi
+
+\usepackage{microtype}
+
+\usepackage{xurl} % add URL line breaks if available
+
+\urlstyle{same} % disable monospaced font for URLs
+
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.33,0.33,0.33}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.61,0.61,0.61}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.14,0.14,0.14}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.06,0.06,0.06}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.27,0.27,0.27}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.43,0.43,0.43}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.5,0.5,0.5}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
+
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+
+\usepackage{caption}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+% \usepackage{makeidx}
+% \makeindex
+
+\urlstyle{tt}
+
+% \makeatletter
+% \def\thm@space@setup{%
+%   \thm@preskip=8pt plus 2pt minus 4pt
+%   \thm@postskip=\thm@preskip
+% }
+% \makeatother
+
+%%%% Fix elagantbook chapter title issue.
+% \titleformat{\chapter}[\style]{\bfseries}
+% {\filcenter\LARGE\enspace\bfseries{\color{structurecolor}\IfAppendix{\appendixname}{\chaptername\,\,\thechapter}\enspace}}{1pt}{\bfseries\color{structurecolor}\LARGE\filcenter}[\ifdefstring{\ELEGANT@base}{hide}{}{\filcenter\base{structurecolor}{88}}]
+
+\frontmatter
+
+\renewcommand{\baselinestretch}{0.975}
+
+\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
+\begin{document}
+% 封面
+\maketitle
+% 插入 before_body.tex
+
+% 目录
+{
+\setcounter{tocdepth}{0}
+\tableofcontents
+}
+% 表目录
+% 图目录
+% 书籍主体部分
+\mainmatter
+
+\hypersetup{pageanchor=true}
+
+\renewcommand{\baselinestretch}{1.05}\normalsize
+
+\captionsetup[figure]{labelformat=empty}
+\captionsetup[subfigure]{labelformat=empty}
+
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
+
+ElegantLaTeX Program developers are intended to provide you beautiful, elegant, user-friendly templates. Currently, the ElegantLaTeX is composed of ElegantNote, ElegantBook, ElegantPaper, designed for typesetting notes, books, and working papers respectively. Latest releases are strongly recommended! This guide is aimed at briefly introducing the 101 of this template. For any other question, suggestion or comment, feel free to contact us on GitHub issue or email us.
+
+This work is licensed under a \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License}.
+
+\begin{figure}
+\centering
+\includegraphics{figs/by-nc-sa.png}
+\caption{by-nc-sa license icon}
+\end{figure}
+
+\hypertarget{some-explanations}{%
+\chapter{Some Explanations}\label{some-explanations}}
+
+The way to make the Bookdown generated TeX files works of the elegantbook class is to use \texttt{bookdown.post.latex} option to modify the generated tex file. Due the natural of the fancy definition of theorem environments in elegantbook, the current hack to unnamed theorem environments is to add \texttt{\{\}\{\}} to the end to \texttt{\textbackslash{}BeginKnitrBlock\{\}} . For named theorem environments, the brackets \texttt{{[}} and \texttt{{]}} will be substibuted by braces \texttt{\{} and \texttt{\}}. In addition, an empty pair of braces \texttt{\{\}} will be added to the end of \texttt{\textbackslash{}BeginKnitrBlock\{\}...}. In elegantbook, the last pair of brackets stores the label of the theorem envirionment which seems unnecessary for bookdown.
+
+An alternative approach define theorem environments is to use pandoc fence blocks and lua to translate them into tex environments. This is the way how ``Think'', ``Note'', and ``Tip'' environments were defined in this demo.
+
+\textbf{In the following Chapter, you will see a demo of how theorem environments work with elegantbook class.} If you have any suggestions/comments, please submit them to this repo. Thank you!
+
+\hypertarget{examples}{%
+\chapter{Examples}\label{examples}}
+
+\hypertarget{dont-be-tricked}{%
+\section{Don't Be Tricked}\label{dont-be-tricked}}
+
+\begin{rmdthink}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  A pizza shop sales 12-inches pizza and 8-inches pizza at the price \$12/each and \$6/each respectively. With \$12, would you like to order one 12-inches and two 8-inches. Why?
+\item
+  A sheet of everyday copy paper is about 0.01 millimeter thick. Repeat folding along a different side 20 times. Now, how thick do you think the folded paper is?
+\end{enumerate}
+
+\end{rmdthink}
+
+\hypertarget{properties-of-exponents}{%
+\section{Properties of Exponents}\label{properties-of-exponents}}
+
+For an integer \(n\), and an expression \(x\), the mathematical operation of the \(n\)-times repeated multiplication of \(x\) is call exponentiation, written as \(x^n\), that is,
+\[
+x^n=\underbrace{x\cdot x \cdots x}_{n~\text{factors of}~x}.
+\]
+
+In the notation \(x^n\), \(n\) is called \textbf{\emph{the exponent}}, \(x\) is called \textbf{\emph{the base}}, and \(x^n\) is called \textbf{\emph{the power}}, read as ``\(x\) raised to the \(n\)-th power'', ``\(x\) to the \(n\)-th power'', ``\(x\) to the \(n\)-th'', ``\(x\) to the power of \(n\)'' or ``\(x\) to the \(n\)''.
+
+\begin{rmdnote}
+
+\textbf{Order of Basic Mathematical Operations}
+
+In mathematics, the order of operations reflects conventions about which procedure should be performed first. There are four levels (from the highest to the lowest):
+
+\textbf{Parenthesis}; \textbf{Exponentiation}; \textbf{Multiplication and Division}; \textbf{Addition and Subtraction}.
+
+Within the same level, the convention is to perform from the left to the right.
+
+\end{rmdnote}
+
+\begin{example}
+
+Simplify. \textbf{Write with positive exponents.}
+\[
+\left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}.
+\]
+
+\end{example}
+
+\begin{solution}
+
+The idea is to simplify the base first and rewrite using positive exponents only.
+
+\[
+\begin{aligned}
+    \left(\dfrac{2y^{-2}z^{-5}}{4x^{-3}y^6}\right)^{-4}
+=&\left(\dfrac{x^3}{2z^{5}y^8}\right)^{-4}\\
+=&\left(\dfrac{2z^{5}y^8}{x^3}\right)^4\\
+=&\dfrac{2^4(z^{5})^4(y^8)^4}{(x^3)^4}\\
+=&\dfrac{16y^{32}z^{20}}{x^{12}}.\\
+\end{aligned}
+\]
+
+\end{solution}
+
+\begin{rmdtip}
+
+\textbf{Simplify (at least partially) the problem first}\\
+To avoid mistakes when working with negative exponents, it's better to apply the negative exponent rule to change negative exponents to positive exponents and simplify the base first.
+
+\end{rmdtip}
+
+\newpage
+
+\hypertarget{generating-theorem-environments-using-r-bookdown-code-chunks}{%
+\section{Generating Theorem Environments Using R Bookdown Code Chunks}\label{generating-theorem-environments-using-r-bookdown-code-chunks}}
+
+Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
+
+\BeginKnitrBlock{theorem}{Pythagorean Theorem}{}
+\protect\hypertarget{thm:ggThm}{}{\label{thm:ggThm} \iffalse (Pythagorean Theorem) \fi{} }
+If \(c\) denotes the length of the hypotenuse and \(a\) and \(b\) denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+\EndKnitrBlock{theorem}
+
+\BeginKnitrBlock{corollary}{}{}
+\protect\hypertarget{cor:unnamed-chunk-1}{}{\label{cor:unnamed-chunk-1} }
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+\EndKnitrBlock{corollary}
+
+\newpage
+
+\hypertarget{generating-theorem-environments-using-pandoc-fence-code-blocks}{%
+\section{Generating Theorem Environments Using Pandoc Fence Code Blocks}\label{generating-theorem-environments-using-pandoc-fence-code-blocks}}
+
+Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
+
+\begin{theorem}{Pythagorean Theorem}{pyThm}
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\end{theorem}
+
+\begin{corollary}{}{}
+
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+
+\end{corollary}
+
+\begin{lemma}{}{}
+
+Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
+to end a Div block. Such a block can be converted
+to LaTeX environment using lua.
+
+\end{lemma}
+
+\begin{example}
+
+Find the hypotenuose for the right triangle whose legs are 4 and 3.
+
+\end{example}
+
+\begin{solution}
+
+By \ref{thm:pyThm} or \ref{thm:ggThm}, the hypothenuose is
+\[
+\sqrt{3^2+4^2}=5.
+\]
+
+\end{solution}
+
+\newpage
+
+\hypertarget{practice}{%
+\section{Practice}\label{practice}}
+
+\begin{exercise}
+
+Simplify. \textbf{Write with positive exponents.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \((3a^2b^3c^2)(4abc^2)(2b^2c^3)\)
+\item
+  \(\dfrac{4y^3z^0}{x^2y^2}\)
+\item
+  \((-2)^{-3}\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+Simplify. \textbf{Write with positive exponents.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \(\dfrac{-u^0v^{15}}{v^{16}}\)
+\item
+  \((-2a^3b^2c^0)^3\)
+\item
+  \(\dfrac{m^5 n^{2}}{(mn)^3}\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+Simplify. \textbf{Write with positive exponents.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \((-3a^2x^3)^{-2}\)
+\item
+  \(\left(\dfrac{-x^0y^3}{2wz^2}\right)^3\)
+\item
+  \(\dfrac{3^{-2}a^{-3}b^5}{x^{-3}y^{-4}}\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+Simplify. \textbf{Write with positive exponents.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \(\left(-x^{-1}(-y)^2\right)^3\)
+\item
+  \(\left(\dfrac{6x^{-2}y^5}{2y^{-3}z^{-11}}\right)^{-3}\)
+\item
+  \(\dfrac{(3 x^{2} y^{-1})^{-3}(2 x^{-3} y^{2})^{-1}}{(x^{6} y^{-5})^{-2}}\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given \$4, will you buy a large watermelon or 4 smaller ones? Why?
+
+\end{exercise}
+
+\hypertarget{another-chapter}{%
+\chapter{Another Chapter}\label{another-chapter}}
+
+\hypertarget{generating-theorem-environments-using-pandoc-fence-code-blocks-1}{%
+\section{Generating Theorem Environments Using Pandoc Fence Code Blocks}\label{generating-theorem-environments-using-pandoc-fence-code-blocks-1}}
+
+Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
+
+\begin{theorem}{Pythagorean Theorem}{}
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\end{theorem}
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\begin{corollary}{}{}
+
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+
+\end{corollary}
+
+\begin{lemma}{}{}
+
+Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
+to end a Div block. Such a block can be converted
+to LaTeX environment using lua.
+
+\end{lemma}
+
+Let \(f\) be a function differentiable over \((a, b)\). If \(f'(x)>0\) for any \(x\) in \((a, b)\), then \(f(a)<f(x)<f(b)\)\$ for any \(x\) in \((a,b)\).
+
+\begin{example}
+
+Find the hypotenuose for the right triangle whose legs are 4 and 3.
+
+\end{example}
+
+\begin{solution}
+
+By \ref{thm:pyThm}, the hypothenuose is
+\[
+\sqrt{3^2+4^2}=5.
+\]
+
+\end{solution}
+
+\newpage
+
+\hypertarget{practice-1}{%
+\section{Practice}\label{practice-1}}
+
+\begin{exercise}
+
+Simplify. \textbf{Write with positive exponents.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \((3a^2b^3c^2)(4abc^2)(2b^2c^3)\)
+\item
+  \(\dfrac{4y^3z^0}{x^2y^2}\)
+\item
+  \((-2)^{-3}\)
+\end{enumerate}
+
+\end{exercise}
+% 参考文献
+
+
+% 插入 after_body.tex
+
+\end{document}
