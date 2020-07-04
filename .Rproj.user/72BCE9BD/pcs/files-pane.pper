@@ -1,9 +1,9 @@
 {
-    "path" : "C:/Git-Dev/elegantbook-demo",
-    "sortOrder" : [
+    "path": "C:/Git-Dev/elegantbook-demo",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }

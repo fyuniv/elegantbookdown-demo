@@ -19,6 +19,7 @@ bookdown::gitbook:
       # twitter: no
   mathjax: local
   self_contained: false
+  keep_md: yes
 
 bookdown::pdf_book:
   includes:
@@ -29,4 +30,4 @@ bookdown::pdf_book:
   keep_tex: yes
   toc_depth: 1
   template: latex/template.tex
-  pandoc_args: ["--top-level-division=chapter", "--lua-filter=latex/lua_for_latex.lua"]
+  pandoc_args: ["--top-level-division=chapter"] #, "--lua-filter=latex/lua_for_latex.lua"]

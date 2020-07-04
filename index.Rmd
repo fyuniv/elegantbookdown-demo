@@ -29,17 +29,60 @@ options(bookdown.post.latex = function(x) {
 
   # fix theorem environments for elegantbook. Remove or modify if other book classes are using!!!
 
-  x<-gsub('(^\\\\BeginKnitrBlock\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
-  x<-gsub('(^\\\\BeginKnitrBlock\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+\\[(.*)\\]', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(defn|rmddefn|rmddefinition)+(\\}$)', '\\1definition\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(defn|rmddefn|rmddefinition)+(\\})+\\[(.*)\\]', '\\1definition\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(defn|rmddefn|rmddefinition)+(\\}$)', '\\1definition\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(lem|rmdlem|rmdlemma)+(\\}$)', '\\1lemma\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(lem|rmdlem|rmdlemma)+(\\})+\\[(.*)\\]', '\\1lemma\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(lem|rmdlem|rmdlemma)+(\\}$)', '\\1lemma\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(thm|rmdthm|rmdtheorem)+(\\}$)', '\\1theorem\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(thm|rmdthm|rmdtheorem)+(\\})+\\[(.*)\\]', '\\1theorem\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(thm|rmdthm|rmdtheorem)+(\\}$)', '\\1theorem\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(cor|rmdcor|rmdcorollary)+(\\}$)', '\\1corollary\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(cor|rmdcor|rmdcorollary)+(\\})+\\[(.*)\\]', '\\1corollary\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(cor|rmdcor|rmdcorollary)+(\\}$)', '\\1corollary\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(prop|rmdprop|rmdproposition)+(\\}$)', '\\1proposition\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(prop|rmdprop|rmdproposition)+(\\})+\\[(.*)\\]', '\\1proposition\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(prop|rmdprop|rmdproposition)+(\\}$)', '\\1proposition\\3', x)
+  
+  x<-gsub('(^\\\\begin\\{)+(exam|rmdexam|rmdexample)+(\\}$)', '\\1example\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(exam|rmdexam|rmdexample)+(\\})+\\[(.*)\\]', '\\1example\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(exam|rmdexam|rmdexample)+(\\}$)', '\\1example\\3', x)
+  
+  x<-gsub('(^\\\\begin\\{)+(sol|rmdsol|rmdsolution)+(\\}$)', '\\1solution\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(sol|rmdsol|rmdsolution)+(\\})+\\[(.*)\\]', '\\1solution\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(sol|rmdsol|rmdsolution)+(\\}$)', '\\1solution\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(pf|rmdpf|rmdproof)+(\\}$)', '\\1proof\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(pf|rmdpf|rmdproof)+(\\})+\\[(.*)\\]', '\\1proof\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(pf|rmdpf|rmdproof)+(\\}$)', '\\1proof\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(exer|rmdexer|rmdexercise)+(\\}$)', '\\1exercise\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(exer|rmdexer|rmdexercise)+(\\})+\\[(.*)\\]', '\\1exercise\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(exer|rmdexer|rmdexercise)+(\\}$)', '\\1exercise\\3', x)
+
+  x<-gsub('(^\\\\begin\\{)+(rmk|rmdrmk|rmdremark)+(\\}$)', '\\1remark\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(rmk|rmdrmk|rmdremark)+(\\})+\\[(.*)\\]', '\\1remark\\3\\{\\4\\}\\{\\}', x)
+  x<-gsub('(^\\\\end\\{)+(rmk|rmdrmk|rmdremark)+(\\}$)', '\\1remark\\3', x)
+
+#  x<-gsub('(^\\\\BeginKnitrBlock\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
+#  x<-gsub('(^\\\\BeginKnitrBlock\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+\\[(.*)\\]', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
+
+  x<-gsub('(^\\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
+  x<-gsub('(^\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+(.*)', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
+
+x<-gsub('\\{Highlighting\\}', '\\{spverbatim\\}', x)
+x<-gsub('\\{verbatim\\}', '\\{spverbatim\\}', x)
 })
-#   x<-gsub('(^\\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\}$)', '\\1\\2\\3\\{\\}\\{\\}', x)
-#   x<-gsub('(^\\\\begin\\{)+(definition|axiom|theorem|lemma|corollary|proposition|postulate)+(\\})+(.*)', '\\1\\2\\3\\{\\4\\}\\{\\}', x)
-# })
 ```
 
 ```{r fig_setting, include=FALSE}
 library("knitr")
-knitr::opts_chunk$set(out.width="60%", fig.align="center")
+knitr::opts_chunk$set(out.width="60%", fig.align="center") # set up the width of figures and centering figures for html.
 ```
 
 \mainmatter

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>A Demo of Elegantbook Bookdown</title>
   <meta name="description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="A Demo of Elegantbook Bookdown" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-04-24" />
+<meta name="date" content="2020-07-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 
 <link rel="next" href="some-explanations.html"/>
-<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script>
 /* ========================================================================
  * Bootstrap: collapse.js v3.3.7
@@ -343,36 +344,36 @@ $(document).ready(function () {
     $(document).ready(function () {
         var chapnum = parseInt($('.section.level1').attr('number'));
         document.querySelector('body').style.setProperty("--chapnum", chapnum);
-        $('.rmdcor').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
-        $('.thm').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
+        // $('.rmdcor').each(function(index,value) {
+        //     thmnum=index+1;
+        //     $(this).attr('number', chapnum+'.'+thmnum);
+        //     thmid=(this).getAttribute('label');
+        //     thmtitle=(this).getAttribute('title');
+        //     if (thmtitle==null) {
+        //         thmtitle='';
+        //     };
+        //     if (thmid==null) {
+        //         $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        //     else {
+        //         $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        // });
+        // $('.thm').each(function(index,value) {
+        //     thmnum=index+1;
+        //     $(this).attr('number', chapnum+'.'+thmnum);
+        //     thmid=(this).getAttribute('label');
+        //     thmtitle=(this).getAttribute('title');
+        //     if (thmtitle==null) {
+        //         thmtitle='';
+        //     };
+        //     if (thmid==null) {
+        //         $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        //     else {
+        //         $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        // });
     });
 </script>
 
@@ -443,7 +444,7 @@ $$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
 <div id="header">
 <h1 class="title">A Demo of Elegantbook Bookdown</h1>
 <p class="author"><em>Fei Ye</em></p>
-<p class="date"><em>2020-04-24</em></p>
+<p class="date"><em>2020-07-04</em></p>
 </div>
 <div id="introduction" class="section level1 unnumbered" number="">
 <h1>Introduction</h1>

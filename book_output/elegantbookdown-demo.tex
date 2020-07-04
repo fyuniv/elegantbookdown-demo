@@ -25,7 +25,7 @@
 
   \author{Fei Ye}
 
-  \date{2020-04-21}
+  \date{2020-07-03}
 
 % logo 图案
 % 封面图片
@@ -47,6 +47,17 @@
 letterpaper,
 margin=1in
 }
+
+%%%%break lstlisting lines
+% \usepackage[none]{hyphenat}
+% \lstset{%
+%   language = R,
+%   breaklines=true,
+%   breakatwhitespace=true,
+% }
+% \usepackage[htt]{hyphenat}
+
+\usepackage{spverbatim}
 
 %%%%%%%%%%%%%%%%%%% Packages for Math %%%%%%%%%%%%%%%%%%%%%%%%%%
 % \usepackage{mathtools}
@@ -300,7 +311,7 @@ margin=1in
 
 \urlstyle{same} % disable monospaced font for URLs
 
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\DefineVerbatimEnvironment{spverbatim}{Verbatim}{commandchars=\\\{\}}
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.33,0.33,0.33}{#1}}
 \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textbf{\textit{#1}}}}
@@ -381,7 +392,6 @@ margin=1in
 
 \renewcommand{\baselinestretch}{0.975}
 
-\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 % 封面
 \maketitle
@@ -467,7 +477,7 @@ Within the same level, the convention is to perform from the left to the right.
 
 \end{rmdnote}
 
-\begin{example}
+\begin{example}{}{}
 
 Simplify. \textbf{Write with positive exponents.}
 \[
@@ -476,7 +486,7 @@ Simplify. \textbf{Write with positive exponents.}
 
 \end{example}
 
-\begin{solution}
+\begin{solution}{}{}
 
 The idea is to simplify the base first and rewrite using positive exponents only.
 
@@ -506,19 +516,19 @@ To avoid mistakes when working with negative exponents, it's better to apply the
 
 Bookdown theorem environments work great. It will be awesome if it can handle r code chunks within a theorem block.
 
-\BeginKnitrBlock{theorem}{Pythagorean Theorem}{}
+\begin{theorem}{[Pythagorean Theorem]}{}
 \protect\hypertarget{thm:ggThm}{}{\label{thm:ggThm} \iffalse (Pythagorean Theorem) \fi{} }
 If \(c\) denotes the length of the hypotenuse and \(a\) and \(b\) denote the lengths of the other two sides, the Pythagorean theorem can be expressed as the Pythagorean equation:
 \[a^2+b^2=c^2.\]
-\EndKnitrBlock{theorem}
+\end{theorem}
 
-\BeginKnitrBlock{corollary}{}{}
+\begin{corollary}{}{}
 \protect\hypertarget{cor:unnamed-chunk-1}{}{\label{cor:unnamed-chunk-1} }
 For any angle \(\theta\), we have
 \[
 \sin^2\theta+\cos^2\theta=1
 \]
-\EndKnitrBlock{corollary}
+\end{corollary}
 
 \newpage
 
@@ -527,7 +537,7 @@ For any angle \(\theta\), we have
 
 Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
 
-\begin{theorem}{Pythagorean Theorem}{pyThm}
+\begin{theorem}{{}{}}{}
 
 If \(c\) denotes the length of the hypotenuse and \(a\)
 and \(b\) denote the lengths of the other two sides,
@@ -536,7 +546,7 @@ the Pythagorean theorem can be expressed as the Pythagorean equation:
 
 \end{theorem}
 
-\begin{corollary}{}{}
+\begin{corollary}{{}{}}{}
 
 For any angle \(\theta\), we have
 \[
@@ -545,7 +555,7 @@ For any angle \(\theta\), we have
 
 \end{corollary}
 
-\begin{lemma}{}{}
+\begin{lemma}{{}{}}{}
 
 Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
 to end a Div block. Such a block can be converted
@@ -553,13 +563,13 @@ to LaTeX environment using lua.
 
 \end{lemma}
 
-\begin{example}
+\begin{example}{}{}
 
 Find the hypotenuose for the right triangle whose legs are 4 and 3.
 
 \end{example}
 
-\begin{solution}
+\begin{solution}{}{}
 
 By \ref{thm:pyThm} or \ref{thm:ggThm}, the hypothenuose is
 \[
@@ -568,12 +578,14 @@ By \ref{thm:pyThm} or \ref{thm:ggThm}, the hypothenuose is
 
 \end{solution}
 
+\href{http://passyworldofmathematics.com/exponents-in-the-real-world/}{Exponential functions}
+
 \newpage
 
 \hypertarget{practice}{%
 \section{Practice}\label{practice}}
 
-\begin{exercise}
+\begin{exercise}{}{}
 
 Simplify. \textbf{Write with positive exponents.}
 
@@ -590,7 +602,7 @@ Simplify. \textbf{Write with positive exponents.}
 
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}{}{}
 
 Simplify. \textbf{Write with positive exponents.}
 
@@ -607,7 +619,7 @@ Simplify. \textbf{Write with positive exponents.}
 
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}{}{}
 
 Simplify. \textbf{Write with positive exponents.}
 
@@ -624,7 +636,7 @@ Simplify. \textbf{Write with positive exponents.}
 
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}{}{}
 
 Simplify. \textbf{Write with positive exponents.}
 
@@ -641,7 +653,7 @@ Simplify. \textbf{Write with positive exponents.}
 
 \end{exercise}
 
-\begin{exercise}
+\begin{exercise}{}{}
 
 A store has large size and small size watermelons. A large one cost \$4 and a small one \$1. Putting on the same table, a smaller watermelons has only half the height of the larger one. Given \$4, will you buy a large watermelon or 4 smaller ones? Why?
 
@@ -650,12 +662,12 @@ A store has large size and small size watermelons. A large one cost \$4 and a sm
 \hypertarget{another-chapter}{%
 \chapter{Another Chapter}\label{another-chapter}}
 
-\hypertarget{generating-theorem-environments-using-pandoc-fence-code-blocks-1}{%
-\section{Generating Theorem Environments Using Pandoc Fence Code Blocks}\label{generating-theorem-environments-using-pandoc-fence-code-blocks-1}}
+\hypertarget{generating-theorem-environments-using-pandoc-fence-code-blocks}{%
+\section{Generating Theorem Environments Using Pandoc Fence Code Blocks}\label{generating-theorem-environments-using-pandoc-fence-code-blocks}}
 
 Bookdown has a lua filter called ``latex-div.lua'' which handles theorem environments for latex.
 
-\begin{theorem}{Pythagorean Theorem}{}
+\begin{theorem}{{}{}}{}
 
 If \(c\) denotes the length of the hypotenuse and \(a\)
 and \(b\) denote the lengths of the other two sides,
@@ -664,17 +676,25 @@ the Pythagorean theorem can be expressed as the Pythagorean equation:
 
 \end{theorem}
 
-If \(c\) denotes the length of the hypotenuse and \(a\)
-and \(b\) denote the lengths of the other two sides,
-the Pythagorean theorem can be expressed as the Pythagorean equation:
-\[a^2+b^2=c^2.\]
+\begin{theorem}{{}{}}{}
 
 If \(c\) denotes the length of the hypotenuse and \(a\)
 and \(b\) denote the lengths of the other two sides,
 the Pythagorean theorem can be expressed as the Pythagorean equation:
 \[a^2+b^2=c^2.\]
 
-\begin{corollary}{}{}
+\end{theorem}
+
+\begin{theorem}{{}{}}{}
+
+If \(c\) denotes the length of the hypotenuse and \(a\)
+and \(b\) denote the lengths of the other two sides,
+the Pythagorean theorem can be expressed as the Pythagorean equation:
+\[a^2+b^2=c^2.\]
+
+\end{theorem}
+
+\begin{corollary}{{}{}}{}
 
 For any angle \(\theta\), we have
 \[
@@ -683,7 +703,27 @@ For any angle \(\theta\), we have
 
 \end{corollary}
 
-\begin{lemma}{}{}
+\begin{corollary}{{}{}}{}
+
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+
+\end{corollary}
+
+\begin{corollary}{{}{}}{}
+
+For any angle \(\theta\), we have
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+
+\end{corollary}
+
+By \ref{cor:corB}, we know that \ldots. \ref{thm:pyThm}
+
+\begin{lemma}{{}{}}{}
 
 Pandoc use \texttt{:::\ \{\#Id\ .Div\_attributes\}} to start and \texttt{:::}
 to end a Div block. Such a block can be converted
@@ -691,15 +731,19 @@ to LaTeX environment using lua.
 
 \end{lemma}
 
+\begin{proposition}{{}{}}{}
+
 Let \(f\) be a function differentiable over \((a, b)\). If \(f'(x)>0\) for any \(x\) in \((a, b)\), then \(f(a)<f(x)<f(b)\)\$ for any \(x\) in \((a,b)\).
 
-\begin{example}
+\end{proposition}
+
+\begin{example}{}{}
 
 Find the hypotenuose for the right triangle whose legs are 4 and 3.
 
 \end{example}
 
-\begin{solution}
+\begin{solution}{}{}
 
 By \ref{thm:pyThm}, the hypothenuose is
 \[
@@ -710,10 +754,10 @@ By \ref{thm:pyThm}, the hypothenuose is
 
 \newpage
 
-\hypertarget{practice-1}{%
-\section{Practice}\label{practice-1}}
+\hypertarget{practice}{%
+\section{Practice}\label{practice}}
 
-\begin{exercise}
+\begin{exercise}{}{}
 
 Simplify. \textbf{Write with positive exponents.}
 

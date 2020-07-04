@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown</title>
   <meta name="description" content="This project demonstrates how to make the Elegantbookdown template created by Xiangyun Huang work for theorem environments." />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Another Chapter | A Demo of Elegantbook Bookdown" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Fei Ye" />
 
 
-<meta name="date" content="2020-04-24" />
+<meta name="date" content="2020-07-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="examples.html"/>
 
-<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script>
 /* ========================================================================
  * Bootstrap: collapse.js v3.3.7
@@ -343,36 +344,36 @@ $(document).ready(function () {
     $(document).ready(function () {
         var chapnum = parseInt($('.section.level1').attr('number'));
         document.querySelector('body').style.setProperty("--chapnum", chapnum);
-        $('.rmdcor').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
-        $('.thm').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
+        // $('.rmdcor').each(function(index,value) {
+        //     thmnum=index+1;
+        //     $(this).attr('number', chapnum+'.'+thmnum);
+        //     thmid=(this).getAttribute('label');
+        //     thmtitle=(this).getAttribute('title');
+        //     if (thmtitle==null) {
+        //         thmtitle='';
+        //     };
+        //     if (thmid==null) {
+        //         $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        //     else {
+        //         $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        // });
+        // $('.thm').each(function(index,value) {
+        //     thmnum=index+1;
+        //     $(this).attr('number', chapnum+'.'+thmnum);
+        //     thmid=(this).getAttribute('label');
+        //     thmtitle=(this).getAttribute('title');
+        //     if (thmtitle==null) {
+        //         thmtitle='';
+        //     };
+        //     if (thmid==null) {
+        //         $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        //     else {
+        //         $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        // });
     });
 </script>
 
@@ -442,10 +443,10 @@ $$\newcommand{\prll}{{\mathbin{\!/\mkern-5mu/\!}}}$$
 </div>
 <div id="another-chapter" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Another Chapter</h1>
-<div id="generating-theorem-environments-using-pandoc-fence-code-blocks-1" class="section level2" number="3.1">
+<div id="generating-theorem-environments-using-pandoc-fence-code-blocks" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Generating Theorem Environments Using Pandoc Fence Code Blocks</h2>
 <p>Bookdown has a lua filter called “latex-div.lua” which handles theorem environments for latex.</p>
-<div class="thm" name="Pythagorean Theorem">
+<div class="thm" title="Pythagorean Theorem">
 <p>If <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span>
 and <span class="math inline">\(b\)</span> denote the lengths of the other two sides,
 the Pythagorean theorem can be expressed as the Pythagorean equation:
@@ -469,7 +470,7 @@ the Pythagorean theorem can be expressed as the Pythagorean equation:
 \sin^2\theta+\cos^2\theta=1
 \]</span></p>
 </div>
-<div class="rmdcor" name="Corolloary A">
+<div class="rmdcor" title="Corollary A">
 <p>For any angle <span class="math inline">\(\theta\)</span>, we have
 <span class="math display">\[
 \sin^2\theta+\cos^2\theta=1
@@ -501,7 +502,7 @@ to LaTeX environment using lua.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
-<div id="practice-1" class="section level2" number="3.2">
+<div id="practice" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Practice</h2>
 <div class="exer">
 <p>Simplify. <strong>Write with positive exponents.</strong></p>

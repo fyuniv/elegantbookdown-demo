@@ -290,36 +290,36 @@ $(document).ready(function () {
     $(document).ready(function () {
         var chapnum = parseInt($('.section.level1').attr('number'));
         document.querySelector('body').style.setProperty("--chapnum", chapnum);
-        $('.rmdcor').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
-        $('.thm').each(function(index,value) {
-            thmnum=index+1;
-            $(this).attr('number', chapnum+'.'+thmnum);
-            thmid=(this).getAttribute('label');
-            thmtitle=(this).getAttribute('name');
-            if (thmtitle==null) {
-                thmtitle='';
-            };
-            if (thmid==null) {
-                $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-            else {
-                $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
-            }
-        });
+        // $('.rmdcor').each(function(index,value) {
+        //     thmnum=index+1;
+        //     $(this).attr('number', chapnum+'.'+thmnum);
+        //     thmid=(this).getAttribute('label');
+        //     thmtitle=(this).getAttribute('title');
+        //     if (thmtitle==null) {
+        //         thmtitle='';
+        //     };
+        //     if (thmid==null) {
+        //         $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        //     else {
+        //         $(this).prepend('<span id="cor:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        // });
+        // $('.thm').each(function(index,value) {
+        //     thmnum=index+1;
+        //     $(this).attr('number', chapnum+'.'+thmnum);
+        //     thmid=(this).getAttribute('label');
+        //     thmtitle=(this).getAttribute('title');
+        //     if (thmtitle==null) {
+        //         thmtitle='';
+        //     };
+        //     if (thmid==null) {
+        //         $(this).prepend('<span><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        //     else {
+        //         $(this).prepend('<span id="thm:'+thmid+'"><strong>Theorem '+chapnum+'.'+thmnum+' '+ thmtitle +'</strong></span>');
+        //     }
+        // });
     });
 </script>
 

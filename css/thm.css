@@ -26,7 +26,6 @@
 
 body {
     --chapnum: 0;
-    /* counter-reset: section 0; */
     counter-reset: thmnum 0;
     counter-reset: lemnum 0;
     counter-reset: cornum 0;
@@ -103,7 +102,7 @@ body {
     border: 1px solid rgba(0,166,82,0.8);
 } */
 
-/* setup styles and positions for theorem names */
+/* setup styles and positions for theorem titles */
 
 .thm::before, .rmdthm::before, .rmdtheorem::before, 
 .defn::before, .rmddefn::before, .rmddefinition::before, 
@@ -169,35 +168,35 @@ body {
     counter-increment: thmnum;
 }
 .thm::before, .rmdthm::before, .rmdtheorem::before {
-    content: var(--thm) counter(chapter)"."counter(thmnum) " " attr(name);
+    content: var(--thm) counter(chapter)"."counter(thmnum) " " attr(title);
 }
 
 .lem, .rmdlem, .rmdlemma {
     counter-increment: lemnum;
 }
 .lem::before, .rmdlem::before, .rmdlemma::before {
-    content: var(--lem) counter(chapter)"."counter(lemnum) " " attr(name);
+    content: var(--lem) counter(chapter)"."counter(lemnum) " " attr(title);
 }
 
 .cor, .rmdcor, .rmdcorollary {
     counter-increment: cornum;
 }
 .cor::before, .rmdcor::before, .rmdcorollary::before {
-    content: var(--cor) counter(chapter)"."counter(cornum)" "attr(name);
+    content: var(--cor) counter(chapter)"."counter(cornum)" "attr(title);
 }
 
 .prop, .rmdprop, .rmdproposition {
     counter-increment: propnum;
 }
 .prop::before, .rmdprop::before, .rmdproposition::before {
-    content: var(--prop) counter(chapter)"."counter(propnum)" "attr(name);
+    content: var(--prop) counter(chapter)"."counter(propnum)" "attr(title);
 }
 
 .defn, .rmddefn, .rmddefinition {
     counter-increment: defnnum;
 }
 .defn::before, .rmddefn::before, .rmddefinition::before {
-    content: var(--defn) counter(chapter)"."counter(defnnum)" "attr(name);
+    content: var(--defn) counter(chapter)"."counter(defnnum)" "attr(title);
 }
 
 .exam, .rmdexam, .rmdexample {
@@ -205,10 +204,10 @@ body {
 }
 .exam::before, .rmdexam::before, .rmdexample::before {
     color: rgb(65, 173, 245);
-    content: var(--exam) counter(chapter)"."counter(examnum)" "attr(name);
+    content: var(--exam) counter(chapter)"."counter(examnum)" "attr(title);
 }
 
-.exer,  .rmdexer, .rmdexercise {
+.exer, .rmdexer, .rmdexercise {
     counter-increment: exernum;
 }
 .exer::before,  .rmdexer::before, .rmdexercise::before {
